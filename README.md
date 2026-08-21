@@ -33,6 +33,23 @@ netsh advfirewall firewall add rule name="Riftbound 8787" dir=in action=allow pr
 
 Open the LAN URL on your brother's phone. Each device picks a name + colour on first launch.
 
+## Docker
+
+```bash
+docker compose up -d --build     # http://<nas-ip>:8787
+docker compose logs -f
+docker compose down
+```
+
+Uses host networking (LAN URLs stay correct; the app owns port 8787 on the host) and bind-mounts `./data`,
+so the SQLite DB, images and backups live on the host as before. Runs as uid 1000 — change `user:` in
+`docker-compose.yml` if your `data/` is owned by someone else. Syncs run on the built-in scheduler; run one
+by hand with `docker compose exec riftbound npm run sync:prices`.
+
+Tips (`sync:tips`) work too: the host's Codex CLI is bind-mounted at `/opt/codex` (its Linux binary is musl, so it
+runs on alpine) with `CODEX_HOME=/codex` pointing at `~/.codex` for auth. If nvm updates node the mount path moves —
+`readlink -f $(which codex)` on the host gives the new one.
+
 ## Development
 
 ```bash

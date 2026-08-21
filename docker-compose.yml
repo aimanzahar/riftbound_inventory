@@ -1,0 +1,22 @@
+services:
+  riftbound:
+    build: .
+    container_name: riftbound
+    restart: unless-stopped
+    user: "1000:10"          # own ./data as the host user, not root
+    network_mode: host       # LAN app: real LAN IPs + the NAS bridge pool is full. PORT=8787 on the host.
+    volumes:
+      - ./data:/app/data
+      # Codex CLI for the tips job: host install (musl binary, runs on alpine) + its auth/config.
+      # Path moves if nvm's node version changes — `readlink -f $(which codex)` to find it again.
+      - /home/zaharin761/.nvm/versions/node/v20.19.5/lib/node_modules/@openai/codex:/opt/codex:ro
+      - /home/zaharin761/.codex:/codex
+    environment:
+      TZ: Asia/Kuala_Lumpur
+      CODEX_HOME: /codex
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8787/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
