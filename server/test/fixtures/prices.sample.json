@@ -1,0 +1,10 @@
+{
+  "prices": [
+    { "card_id": "OGN-043", "finish": "normal", "usd_market": 0.25, "usd_low": 0.1, "usd_mid": 0.3, "usd_high": 1.0, "source": "localjson", "source_ref": "652819" },
+    { "card_id": "OGN-043", "finish": "foil", "usd_market": 1.5, "usd_low": 1.0, "usd_mid": 1.75, "usd_high": 4.0, "source": "localjson", "source_ref": "652819" },
+    { "card_id": "SFD-227-STAR", "finish": "foil", "usd_market": 2499.95, "usd_low": 2000, "usd_mid": null, "usd_high": 6000, "source": "localjson", "source_ref": "664913" },
+    { "card_id": "OGN-007", "finish": "normal", "usd_market": 0.05, "usd_low": 0.01, "usd_mid": 0.1, "usd_high": 0.5, "source": "localjson", "source_ref": "652777" },
+    { "card_id": "XXX-999", "finish": "normal", "usd_market": 9.99, "source": "localjson", "source_ref": "0" },
+    { "card_id": "OGN-045", "finish": "normal", "usd_market": null, "usd_low": null, "usd_mid": null, "usd_high": null }
+  ]
+}

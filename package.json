@@ -1,0 +1,47 @@
+{
+  "name": "riftbound-inventory",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local, realtime Riftbound TCG card inventory for two players on a LAN",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18 <23"
+  },
+  "scripts": {
+    "dev": "node --watch-path=./server --watch-path=./shared --watch-path=./sync --disable-warning=ExperimentalWarning server/index.ts --dev",
+    "build": "vite build",
+    "start": "node --disable-warning=ExperimentalWarning server/index.ts",
+    "prod": "npm run build && npm start",
+    "typecheck": "tsc -p tsconfig.server.json && tsc -p web/tsconfig.json",
+    "test": "node --disable-warning=ExperimentalWarning --test \"server/test/*.test.ts\"",
+    "sync": "node --disable-warning=ExperimentalWarning sync/run.ts",
+    "sync:all": "npm run sync -- all",
+    "sync:cards": "npm run sync -- cards",
+    "sync:products": "npm run sync -- products",
+    "sync:images": "npm run sync -- images",
+    "sync:fx": "npm run sync -- fx",
+    "sync:prices": "npm run sync -- prices",
+    "sync:meta": "npm run sync -- meta",
+    "sync:tips": "npm run sync -- tips",
+    "backup": "npm run sync -- backup",
+    "seed:products": "node --disable-warning=ExperimentalWarning scripts/build-products-seed.ts",
+    "setup": "npm run build && npm run sync -- all"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.14.10",
+    "lucide-react": "^1.33.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.1.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.0",
+    "vite": "^8.2.2"
+  }
+}

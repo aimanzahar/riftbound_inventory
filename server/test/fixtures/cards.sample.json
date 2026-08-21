@@ -1,0 +1,97 @@
+{
+  "sets": [
+    { "code": "OGN", "name": "Origins", "printed_total": 298, "release_date": "2025-10-31" },
+    { "code": "OGS", "name": "Proving Grounds", "printed_total": 24, "release_date": "2025-10-31" },
+    { "code": "SFD", "name": "Spiritforged", "printed_total": 221, "release_date": "2026-02-13" },
+    { "code": "UNL", "name": "Unleashed", "printed_total": 219, "release_date": "2026-05-08" },
+    { "code": "VEN", "name": "Vendetta", "printed_total": 166, "release_date": "2026-07-31" }
+  ],
+  "cards": [
+    {
+      "id": "OGN-007", "riot_id": "ogn-007-298", "public_code": "OGN-007/298", "name": "Fury Rune", "type": "Rune", "supertype": "Basic",
+      "domains": ["fury"], "rarity": "Common", "rules_html": null, "artist": "Riot Games", "tags": [],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a1-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "OGN-007a", "riot_id": "ogn-007a-298", "public_code": "OGN-007a/298", "name": "Fury Rune", "type": "Rune", "supertype": "Basic",
+      "domains": ["fury"], "rarity": "Showcase", "rules_html": null, "artist": "Riot Games", "tags": [],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a2-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "OGN-043", "riot_id": "ogn-043-298", "public_code": "OGN-043/298", "name": "Charm", "type": "Spell", "supertype": null,
+      "domains": ["calm"], "energy": 1, "rarity": "Common",
+      "rules_html": "<p>[Reaction] (Play any time, even before spells and abilities resolve.)<br />Give a unit -2 :rb_might: this turn.<br />[Predict]. (Look at the top card of your Main Deck. You may recycle it.)</p>",
+      "artist": "Kudos Productions", "tags": [],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a3-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "OGN-045", "riot_id": "ogn-045-298", "public_code": "OGN-045/298", "name": "Defy", "type": "Spell", "supertype": null,
+      "domains": ["calm"], "energy": 1, "rarity": "Common",
+      "rules_html": "<p>[Reaction]<br />Choose one &mdash;</p><ul><li>Counter an ability.</li><li>Draw 1.</li></ul>",
+      "artist": "Kudos Productions", "tags": [],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a4-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "OGN-250", "riot_id": "ogn-250-298", "public_code": "OGN-250/298", "name": "Daughter of the Void", "type": "Legend", "supertype": null,
+      "domains": ["fury", "chaos"], "rarity": "Epic",
+      "rules_html": "<p>:rb_energy_4:, :rb_exhaust:: Play a 3 :rb_might: Void unit token.</p>", "artist": "Envar Studio", "tags": ["Kai'Sa"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a5-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "OGN-257", "riot_id": "ogn-257-298", "public_code": "OGN-257/298", "name": "Blind Monk", "type": "Legend", "supertype": null,
+      "domains": ["calm", "body"], "rarity": "Epic", "rules_html": "<p>Once per turn, when you play a spell, ready a rune.</p>", "artist": "Envar Studio", "tags": ["Lee Sin"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a6-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "OGN-299", "riot_id": "ogn-299-298", "public_code": "OGN-299/298", "name": "Daughter of the Void", "type": "Legend", "supertype": null,
+      "domains": ["fury", "chaos"], "rarity": "Showcase",
+      "rules_html": "<p>:rb_energy_4:, :rb_exhaust:: Play a 3 :rb_might: Void unit token.</p>", "artist": "Envar Studio", "tags": ["Kai'Sa"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a7-1488x2078.png?accountingTag=RB"
+    },
+    {
+      "id": "OGN-304s", "riot_id": "ogn-304-star-298", "public_code": "OGN-304*/298", "name": "Blind Monk", "type": "Legend", "supertype": null,
+      "domains": ["calm", "body"], "rarity": "Showcase", "rules_html": "<p>Once per turn, when you play a spell, ready a rune.</p>", "artist": "Envar Studio", "tags": ["Lee Sin"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a8-1488x2078.png?accountingTag=RB"
+    },
+    {
+      "id": "OGS-019", "riot_id": "ogs-019-024", "public_code": "OGS-019/024", "name": "Wuju Bladesman", "type": "Legend", "supertype": null,
+      "domains": ["calm", "body"], "rarity": "Epic", "rules_html": "<p>When you play a spell, give me +1 :rb_might: this turn.</p>", "artist": "Envar Studio", "tags": ["Master Yi"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000a9-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "SFD-227", "riot_id": "sfd-227-221", "public_code": "SFD-227/221", "name": "Ahri, Inquisitive", "type": "Unit", "supertype": "Champion",
+      "domains": ["mind"], "energy": 3, "might": 3, "power": 1, "rarity": "Showcase",
+      "rules_html": "<p>When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.</p>", "artist": "Kudos Productions", "tags": ["Ahri"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000b1-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "SFD-227s", "riot_id": "sfd-227-star-221", "public_code": "SFD-227*/221", "name": "Ahri, Inquisitive", "type": "Unit", "supertype": "Champion",
+      "domains": ["mind"], "energy": 3, "might": 3, "power": 1, "rarity": "Showcase",
+      "rules_html": "<p>When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.</p>", "artist": "Kudos Productions", "tags": ["Ahri"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000b2-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "UNL-113", "riot_id": "unl-113-219", "public_code": "UNL-113/219", "name": "Master Yi, Tempered", "type": "Unit", "supertype": "Champion",
+      "domains": ["calm"], "energy": 4, "might": 4, "power": 2, "rarity": "Rare", "rules_html": "<p>[Accelerate]</p>", "artist": "Kudos Productions", "tags": ["Master Yi"],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000b3-744x1039.png?accountingTag=RB"
+    },
+    {
+      "id": "UNL-T01", "riot_id": "unl-t01", "public_code": "UNL-T01", "name": "Baron Pit", "type": "Battlefield", "supertype": "Token",
+      "domains": ["colorless"], "rarity": "Common", "rules_html": "<p>When a unit conquers here, draw 1.</p>", "artist": "Envar Studio", "tags": [], "orientation": "landscape",
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000b4-1039x744.png?accountingTag=RB"
+    },
+    {
+      "id": "VEN-R01", "riot_id": "ven-r01", "public_code": "VEN-R01", "name": "Fury Rune", "type": "Rune", "supertype": "Basic",
+      "domains": ["fury"], "rarity": "Common", "rules_html": null, "artist": "Riot Games", "tags": [],
+      "image_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aaaa0000000000000000000000000000000000b5-744x1039.png?accountingTag=RB"
+    }
+  ],
+  "join": [
+    { "id": "OGN-007", "tcgplayer_id": 652777, "has_normal": 1, "has_foil": 1, "banned": 0 },
+    { "id": "OGN-007a", "tcgplayer_id": 652778, "has_normal": 0, "has_foil": 1, "banned": 0 },
+    { "id": "OGN-043", "tcgplayer_id": 652819, "has_normal": 1, "has_foil": 1, "banned": 0, "flavor": "“Just a little closer…”" },
+    { "id": "OGN-045", "tcgplayer_id": 652821, "has_normal": 1, "has_foil": 1, "banned": 0 },
+    { "id": "SFD-227-STAR", "tcgplayer_id": 664913, "has_normal": 0, "has_foil": 1, "banned": 0 },
+    { "id": "OGN-045-P", "tcgplayer_id": 999999, "has_normal": 1, "has_foil": 0, "banned": 0 }
+  ]
+}

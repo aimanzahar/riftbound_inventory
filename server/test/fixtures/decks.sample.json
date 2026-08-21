@@ -1,0 +1,52 @@
+{
+  "decks": [
+    {
+      "source": "localjson",
+      "source_url": "local://deck/master-yi-1",
+      "name": "Master Yi, Wuju Bladesman · Master Yi, Tempered",
+      "legend_name": "Master Yi, Wuju Bladesman",
+      "legend_code": null,
+      "champion_code": "UNL-113/219",
+      "player": "Tester One",
+      "event_name": "Fixture Open",
+      "event_date": "today-3d",
+      "event_players": 64,
+      "event_tier": "premier",
+      "placement": 1,
+      "region": "EU",
+      "format": "constructed",
+      "cards": [
+        { "code": "OGS-019", "name": "Master Yi, Wuju Bladesman", "qty": 1, "section": "legend" },
+        { "code": "UNL-113/219", "name": "Master Yi, Tempered", "qty": 1, "section": "champion" },
+        { "code": "OGN-043/298", "name": "Charm", "qty": 3, "section": "main" },
+        { "code": "OGN-045/298", "name": "Defy", "qty": 2, "section": "main" },
+        { "code": "OGN-045/298", "name": "Defy", "qty": 1, "section": "side" },
+        { "code": "UNL-T01", "name": "Baron Pit", "qty": 1, "section": "battlefield" },
+        { "code": "OGN-007a/298", "name": "Fury Rune", "qty": 6, "section": "runes" },
+        { "code": "VEN-R01", "name": "Fury Rune", "qty": 6, "section": "runes" },
+        { "code": "XXX-999/100", "name": "Mystery Card", "qty": 1, "section": "main" }
+      ]
+    },
+    {
+      "source": "localjson",
+      "source_url": "local://deck/lee-sin-old",
+      "name": "Blind Monk",
+      "legend_name": "Lee Sin, Blind Monk",
+      "legend_code": "OGN-304*/298",
+      "champion_code": null,
+      "player": "Tester Two",
+      "event_name": "Ancient Cup",
+      "event_date": "2025-01-15",
+      "event_players": 32,
+      "event_tier": "major",
+      "placement": 8,
+      "region": "NA",
+      "format": "constructed",
+      "cards": [
+        { "code": "ogn-304-star-298", "name": "Blind Monk", "qty": 1, "section": "legend" },
+        { "code": "OGN-043/298", "name": "Charm", "qty": 3, "section": "main" },
+        { "code": "OGN-007/298", "name": "Fury Rune", "qty": 12, "section": "runes" }
+      ]
+    }
+  ]
+}

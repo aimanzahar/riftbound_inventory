@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ogs-master-yi",
+    "name": "Proving Grounds — Master Yi, Wuju Bladesman",
+    "set_code": "OGS",
+    "kind": "starter_set",
+    "release_date": "2025-10-31",
+    "msrp_usd": 39.99,
+    "tcgplayer_id": 635460,
+    "image_url": null,
+    "source_url": "https://riftmana.com/riftbound-proving-grounds-decklists/",
+    "fixed_contents": 1,
+    "notes": "fixture",
+    "contents": [
+      { "card_id": "OGS-019", "finish": "normal", "qty": 1 },
+      { "card_id": "OGN-043", "finish": "normal", "qty": 3 },
+      { "card_id": "OGN-045", "finish": "normal", "qty": 2 },
+      { "card_id": "OGN-007", "finish": "normal", "qty": 6 },
+      { "card_id": "OGN-007", "finish": "normal", "qty": 6 },
+      { "card_id": "UNL-113", "finish": "foil", "qty": 1 }
+    ]
+  },
+  {
+    "id": "bad-product",
+    "name": "Deck with an unknown card",
+    "set_code": "OGN",
+    "kind": "champion_deck",
+    "release_date": "2025-10-31",
+    "msrp_usd": 19.99,
+    "tcgplayer_id": null,
+    "image_url": null,
+    "source_url": null,
+    "fixed_contents": 1,
+    "notes": null,
+    "contents": [
+      { "card_id": "OGN-043", "finish": "normal", "qty": 3 },
+      { "card_id": "XXX-999", "finish": "normal", "qty": 1 }
+    ]
+  },
+  {
+    "id": "ogn-booster",
+    "name": "Origins Booster Pack",
+    "set_code": "OGN",
+    "kind": "booster_pack",
+    "release_date": "2025-10-31",
+    "msrp_usd": 4.99,
+    "tcgplayer_id": 635366,
+    "image_url": null,
+    "source_url": null,
+    "fixed_contents": 0,
+    "notes": "14 cards",
+    "contents": []
+  }
+]

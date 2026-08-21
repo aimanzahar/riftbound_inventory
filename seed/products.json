@@ -1,0 +1,5146 @@
+[
+  {
+    "id": "ogn-champion-deck-jinx",
+    "name": "Origins - Champion Deck (Jinx)",
+    "set_code": "OGN",
+    "kind": "champion_deck",
+    "release_date": "2025-10-31",
+    "msrp_usd": 19.99,
+    "tcgplayer_id": 635371,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635371-origins-champion-deck-jinx.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=jinx-premade-origins-champion-deck",
+    "fixed_contents": 1,
+    "notes": "Also contains 1 random Origins booster, paper playmat and deckbox (not in contents). Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-001",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-002",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-003",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-006",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-008",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-011",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-019",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-024",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-030",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-036",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-165",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-166",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-168",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-169",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-178",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-180",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-182",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-185",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-195",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-251",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-285",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-289",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-298",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ogn-champion-deck-lee-sin",
+    "name": "Origins - Champion Deck (Lee Sin)",
+    "set_code": "OGN",
+    "kind": "champion_deck",
+    "release_date": "2025-10-31",
+    "msrp_usd": 19.99,
+    "tcgplayer_id": 635375,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635375-origins-champion-deck-lee-sin.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=lee-sin-premade-origins-champion-deck",
+    "fixed_contents": 1,
+    "notes": "Also contains 1 random Origins booster, paper playmat and deckbox (not in contents). Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-042",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-043",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-052",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-053",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-055",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-058",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-060",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-065",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-125",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-126",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-128",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-132",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-135",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-136",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-137",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-142",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-147",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-151",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-152",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-157",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-257",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-280",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-282",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-289",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ogn-champion-deck-viktor",
+    "name": "Origins - Champion Deck (Viktor)",
+    "set_code": "OGN",
+    "kind": "champion_deck",
+    "release_date": "2025-10-31",
+    "msrp_usd": 19.99,
+    "tcgplayer_id": 635374,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635374-origins-champion-deck-viktor.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=viktor-premade-origins-champion-deck",
+    "fixed_contents": 1,
+    "notes": "Also contains 1 random Origins booster, paper playmat and deckbox (not in contents). Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-083",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-084",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-086",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-089",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-090",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-093",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-094",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-095",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-101",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-103",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-111",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-117",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-118",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-206",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-208",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-209",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-213",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-216",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-222",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-233",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-265",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-275",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-293",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-294",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ogn-champion-deck-jinx-display",
+    "name": "Origins - Champion Deck (Jinx) Display",
+    "set_code": "OGN",
+    "kind": "champion_deck",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 635372,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635372-origins-champion-deck-jinx-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/635372",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-champion-deck-lee-sin-display",
+    "name": "Origins - Champion Deck (Lee Sin) Display",
+    "set_code": "OGN",
+    "kind": "champion_deck",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 635458,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635458-origins-champion-deck-lee-sin-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/635458",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-champion-deck-viktor-display",
+    "name": "Origins - Champion Deck (Viktor) Display",
+    "set_code": "OGN",
+    "kind": "champion_deck",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 635373,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635373-origins-champion-deck-viktor-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/635373",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-booster-pack",
+    "name": "Origins - Booster Pack",
+    "set_code": "OGN",
+    "kind": "booster_pack",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 635366,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635366-origins-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/635366",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-nexus-night-promo-pack",
+    "name": "Origins - Nexus Night Promo Pack",
+    "set_code": "OGN",
+    "kind": "booster_pack",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 675404,
+    "image_url": "https://static.dotgg.gg/riftbound/products/675404-origins-nexus-night-promo-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/675404",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-sleeved-booster-pack",
+    "name": "Origins - Sleeved Booster Pack",
+    "set_code": "OGN",
+    "kind": "booster_pack",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 635459,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635459-origins-sleeved-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/635459",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-booster-display",
+    "name": "Origins - Booster Display",
+    "set_code": "OGN",
+    "kind": "booster_box",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 635368,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635368-origins-booster-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/635368",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-booster-display-case",
+    "name": "Origins - Booster Display Case",
+    "set_code": "OGN",
+    "kind": "booster_box",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 635369,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635369-origins-booster-display-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/635369",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogn-sleeved-booster-pack-art-bundle-set-of-3",
+    "name": "Origins - Sleeved Booster Pack Art Bundle [Set of 3]",
+    "set_code": "OGN",
+    "kind": "bundle",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 690173,
+    "image_url": "https://static.dotgg.gg/riftbound/products/690173-origins-sleeved-booster-pack-art-bundle-set-of-3.webp",
+    "source_url": "https://www.tcgplayer.com/product/690173",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ogs-proving-grounds-box-set",
+    "name": "Origins - Proving Grounds Box Set",
+    "set_code": "OGS",
+    "kind": "starter_set",
+    "release_date": "2025-10-31",
+    "msrp_usd": 39.99,
+    "tcgplayer_id": 635460,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635460-origins-proving-grounds-box-set.webp",
+    "source_url": "https://riftmana.com/riftbound-proving-grounds-decklists/",
+    "fixed_contents": 1,
+    "notes": "All four 54-card Proving Grounds decks (Annie, Lux, Garen, Master Yi). Also contains 4 oversized battlefields, 4 acrylic champion figures and a how-to-play guide (not in contents). Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-005",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-013",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-042",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-046",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-048",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-049",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-052",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-055",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-084",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-085",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-087",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-088",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-089",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-095",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-103",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-105",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-126",
+        "finish": "normal",
+        "qty": 12
+      },
+      {
+        "card_id": "OGN-127",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-129",
+        "finish": "normal",
+        "qty": 5
+      },
+      {
+        "card_id": "OGN-130",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-131",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-132",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-134",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-137",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-142",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-166",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-169",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-170",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-171",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-174",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-176",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-185",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-191",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-206",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-210",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-211",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 12
+      },
+      {
+        "card_id": "OGN-215",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-219",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-222",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-279",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-288",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-294",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-296",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-001",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-002",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-003",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-004",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-005",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-006",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-007",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-008",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-009",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-010",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-011",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-012",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-013",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-014",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-015",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-016",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGS-017",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-018",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-019",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-020",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-021",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-022",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-023",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-024",
+        "finish": "normal",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "ogs-proving-grounds-deck-annie",
+    "name": "Proving Grounds Deck (Annie, Dark Child)",
+    "set_code": "OGS",
+    "kind": "starter_set",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635460-origins-proving-grounds-box-set.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=annie-proving-grounds-deck",
+    "fixed_contents": 1,
+    "notes": "One of the four 54-card decks inside the Origins - Proving Grounds Box Set (TCGplayer 635460); not sold separately. Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-005",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-013",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-166",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-169",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-170",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-171",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-174",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-176",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-185",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-191",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-296",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-001",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-002",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-003",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-010",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-011",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-017",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-018",
+        "finish": "normal",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "ogs-proving-grounds-deck-garen",
+    "name": "Proving Grounds Deck (Garen, Might of Demacia)",
+    "set_code": "OGS",
+    "kind": "starter_set",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635460-origins-proving-grounds-box-set.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=garen-proving-grounds-deck",
+    "fixed_contents": 1,
+    "notes": "One of the four 54-card decks inside the Origins - Proving Grounds Box Set (TCGplayer 635460); not sold separately. Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-126",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-129",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-130",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-131",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-132",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-206",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-210",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-211",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-215",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-219",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-222",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-294",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-007",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-013",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-015",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-016",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-023",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-024",
+        "finish": "normal",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "ogs-proving-grounds-deck-lux",
+    "name": "Proving Grounds Deck (Lux, Lady of Luminosity)",
+    "set_code": "OGS",
+    "kind": "starter_set",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635460-origins-proving-grounds-box-set.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=lux-proving-grounds-deck",
+    "fixed_contents": 1,
+    "notes": "One of the four 54-card decks inside the Origins - Proving Grounds Box Set (TCGplayer 635460); not sold separately. Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-084",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-085",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-087",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-088",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-089",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-095",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-103",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-105",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-206",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-210",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-219",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-288",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-006",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-012",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-014",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-016",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-021",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-022",
+        "finish": "normal",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "ogs-proving-grounds-deck-master-yi",
+    "name": "Proving Grounds Deck (Master Yi, Wuju Bladesman)",
+    "set_code": "OGS",
+    "kind": "starter_set",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/635460-origins-proving-grounds-box-set.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=master-yi-proving-grounds-deck",
+    "fixed_contents": 1,
+    "notes": "One of the four 54-card decks inside the Origins - Proving Grounds Box Set (TCGplayer 635460); not sold separately. Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-042",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-046",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-048",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-049",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-052",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-055",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-126",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-127",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-129",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-134",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-137",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-142",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-279",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-004",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-005",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-008",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGS-009",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGS-019",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGS-020",
+        "finish": "normal",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "ogs-proving-grounds-box-set-case",
+    "name": "Origins - Proving Grounds Box Set Case",
+    "set_code": "OGS",
+    "kind": "starter_set",
+    "release_date": "2025-10-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 663920,
+    "image_url": "https://static.dotgg.gg/riftbound/products/663920-origins-proving-grounds-box-set-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/663920",
+    "fixed_contents": 0,
+    "notes": "Case of 6 × Proving Grounds Box Set.",
+    "contents": []
+  },
+  {
+    "id": "sfd-champion-deck-fiora",
+    "name": "Spiritforged - Champion Deck (Fiora)",
+    "set_code": "SFD",
+    "kind": "champion_deck",
+    "release_date": "2026-02-13",
+    "msrp_usd": 19.99,
+    "tcgplayer_id": 661942,
+    "image_url": "https://static.dotgg.gg/riftbound/products/661942-spiritforged-champion-deck-fiora.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=fiora-champion-deck",
+    "fixed_contents": 1,
+    "notes": "Also contains 1 random Spiritforged booster, paper playmat, deckbox and tokens (not in contents). Official list: https://playriftbound.com/en-us/news/announcements/spiritforged-precons-fiora-rumble Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-126",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-136",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-229",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-093",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-095",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-097",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-099",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-103",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-106",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-107",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-108",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-110",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-113",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-116",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-156",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-157",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-161",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-167",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-172",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-180",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-205",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-206",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-213",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-218",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-221",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-champion-deck-rumble",
+    "name": "Spiritforged - Champion Deck (Rumble)",
+    "set_code": "SFD",
+    "kind": "champion_deck",
+    "release_date": "2026-02-13",
+    "msrp_usd": 19.99,
+    "tcgplayer_id": 661939,
+    "image_url": "https://static.dotgg.gg/riftbound/products/661939-spiritforged-champion-deck-rumble.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=rumble-champion-deck",
+    "fixed_contents": 1,
+    "notes": "Also contains 1 random Spiritforged booster, paper playmat, deckbox and tokens (not in contents). Official list: https://playriftbound.com/en-us/news/announcements/spiritforged-precons-fiora-rumble Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-016",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-024",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "OGN-083",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-089",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-095",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-105",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-007",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-019",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-021",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-022",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-026",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-062",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-065",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-066",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-069",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-070",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-071",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "SFD-076",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "SFD-089",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-181",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-182",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-212",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-215",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-220",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-champion-deck-fiora-display",
+    "name": "Spiritforged - Champion Deck (Fiora) Display",
+    "set_code": "SFD",
+    "kind": "champion_deck",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 661949,
+    "image_url": "https://static.dotgg.gg/riftbound/products/661949-spiritforged-champion-deck-fiora-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/661949",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "sfd-champion-deck-rumble-display",
+    "name": "Spiritforged - Champion Deck (Rumble) Display",
+    "set_code": "SFD",
+    "kind": "champion_deck",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 661948,
+    "image_url": "https://static.dotgg.gg/riftbound/products/661948-spiritforged-champion-deck-rumble-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/661948",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "sfd-pre-rift-kit-ezreal",
+    "name": "Spiritforged - Pre-Rift Kit (Ezreal)",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/679041-spiritforged-pre-rift-kit.webp",
+    "source_url": "https://riftmana.com/spiritforged-pre-rift-event-rules-6-mini-pre-constructed-decks/",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Spiritforged - Pre-Rift Kit (TCGplayer 679041), which also has 5 boosters + promo Yone, Blademaster (not in contents). Runes not included in the kit. List hand-entered from riftmana.",
+    "contents": [
+      {
+        "card_id": "SFD-066",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-067",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-069",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-070",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-077",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-078",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-082",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-122",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-124",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-126",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-129",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-132",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-138",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-199",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-215",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-pre-rift-kit-irelia",
+    "name": "Spiritforged - Pre-Rift Kit (Irelia)",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/679041-spiritforged-pre-rift-kit.webp",
+    "source_url": "https://riftmana.com/spiritforged-pre-rift-event-rules-6-mini-pre-constructed-decks/",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Spiritforged - Pre-Rift Kit (TCGplayer 679041), which also has 5 boosters + promo Yone, Blademaster (not in contents). Runes not included in the kit. List hand-entered from riftmana.",
+    "contents": [
+      {
+        "card_id": "SFD-034",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-036",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-038",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-039",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-045",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-048",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-124",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-125",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-127",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-130",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-133",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-137",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-141",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-195",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-220",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-pre-rift-kit-jax",
+    "name": "Spiritforged - Pre-Rift Kit (Jax)",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/679041-spiritforged-pre-rift-kit.webp",
+    "source_url": "https://riftmana.com/spiritforged-pre-rift-event-rules-6-mini-pre-constructed-decks/",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Spiritforged - Pre-Rift Kit (TCGplayer 679041), which also has 5 boosters + promo Yone, Blademaster (not in contents). Runes not included in the kit. List hand-entered from riftmana.",
+    "contents": [
+      {
+        "card_id": "SFD-033",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-035",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-037",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-040",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-041",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-042",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-054",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-092",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-093",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-095",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-098",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-102",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-107",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-193",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-213",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-pre-rift-kit-lucian",
+    "name": "Spiritforged - Pre-Rift Kit (Lucian)",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/679041-spiritforged-pre-rift-kit.webp",
+    "source_url": "https://riftmana.com/spiritforged-pre-rift-event-rules-6-mini-pre-constructed-decks/",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Spiritforged - Pre-Rift Kit (TCGplayer 679041), which also has 5 boosters + promo Yone, Blademaster (not in contents). Runes not included in the kit. List hand-entered from riftmana.",
+    "contents": [
+      {
+        "card_id": "SFD-001",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-002",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-007",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-009",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-011",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-016",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-095",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-096",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-097",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-099",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-107",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-108",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-113",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-183",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-218",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-pre-rift-kit-reksai",
+    "name": "Spiritforged - Pre-Rift Kit (Rek'Sai)",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/679041-spiritforged-pre-rift-kit.webp",
+    "source_url": "https://riftmana.com/spiritforged-pre-rift-event-rules-6-mini-pre-constructed-decks/",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Spiritforged - Pre-Rift Kit (TCGplayer 679041), which also has 5 boosters + promo Yone, Blademaster (not in contents). Runes not included in the kit. List hand-entered from riftmana.",
+    "contents": [
+      {
+        "card_id": "SFD-003",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-004",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-006",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-010",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-015",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-018",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-151",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-156",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-157",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-159",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-161",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-164",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-170",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-187",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-217",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-pre-rift-kit-renata-glasc",
+    "name": "Spiritforged - Pre-Rift Kit (Renata Glasc)",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/679041-spiritforged-pre-rift-kit.webp",
+    "source_url": "https://riftmana.com/spiritforged-pre-rift-event-rules-6-mini-pre-constructed-decks/",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Spiritforged - Pre-Rift Kit (TCGplayer 679041), which also has 5 boosters + promo Yone, Blademaster (not in contents). Runes not included in the kit. List hand-entered from riftmana.",
+    "contents": [
+      {
+        "card_id": "SFD-063",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-064",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-069",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-070",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-072",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-074",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-152",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-154",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-155",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-158",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-162",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-165",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-171",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-201",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "SFD-214",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "sfd-pre-rift-event-kit",
+    "name": "Spiritforged - Pre-Rift Event Kit",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": 480,
+    "tcgplayer_id": 678690,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678690-spiritforged-pre-rift-event-kit.webp",
+    "source_url": "https://www.tcgplayer.com/product/678690",
+    "fixed_contents": 0,
+    "notes": "Event kit: 16 Pre-Rift kits + 1 booster display.",
+    "contents": []
+  },
+  {
+    "id": "sfd-pre-rift-kit",
+    "name": "Spiritforged - Pre-Rift Kit",
+    "set_code": "SFD",
+    "kind": "prerift_kit",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 679041,
+    "image_url": "https://static.dotgg.gg/riftbound/products/679041-spiritforged-pre-rift-kit.webp",
+    "source_url": "https://www.tcgplayer.com/product/679041",
+    "fixed_contents": 0,
+    "notes": "Retail kit: 1 random 15-card mini-precon (6 varieties, see the per-champion Pre-Rift Kit products) + 5 boosters + promo.",
+    "contents": []
+  },
+  {
+    "id": "sfd-booster-pack",
+    "name": "Spiritforged - Booster Pack",
+    "set_code": "SFD",
+    "kind": "booster_pack",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 661954,
+    "image_url": "https://static.dotgg.gg/riftbound/products/661954-spiritforged-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/661954",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "sfd-nexus-night-promo-pack",
+    "name": "Spiritforged - Nexus Night Promo Pack",
+    "set_code": "SFD",
+    "kind": "booster_pack",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 680454,
+    "image_url": "https://static.dotgg.gg/riftbound/products/680454-spiritforged-nexus-night-promo-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/680454",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "sfd-sleeved-booster-pack",
+    "name": "Spiritforged - Sleeved Booster Pack",
+    "set_code": "SFD",
+    "kind": "booster_pack",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 678766,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678766-spiritforged-sleeved-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/678766",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "sfd-booster-display",
+    "name": "Spiritforged - Booster Display",
+    "set_code": "SFD",
+    "kind": "booster_box",
+    "release_date": "2026-02-13",
+    "msrp_usd": 120,
+    "tcgplayer_id": 661934,
+    "image_url": "https://static.dotgg.gg/riftbound/products/661934-spiritforged-booster-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/661934",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "sfd-booster-display-case",
+    "name": "Spiritforged - Booster Display Case",
+    "set_code": "SFD",
+    "kind": "booster_box",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 661937,
+    "image_url": "https://static.dotgg.gg/riftbound/products/661937-spiritforged-booster-display-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/661937",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "sfd-sleeved-booster-pack-art-bundle-set-of-3",
+    "name": "Spiritforged - Sleeved Booster Pack Art Bundle [Set of 3]",
+    "set_code": "SFD",
+    "kind": "bundle",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 690174,
+    "image_url": "https://static.dotgg.gg/riftbound/products/690174-spiritforged-sleeved-booster-pack-art-bundle-set-of-3.webp",
+    "source_url": "https://www.tcgplayer.com/product/690174",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-champion-deck-vex",
+    "name": "Unleashed - Champion Deck (Vex)",
+    "set_code": "UNL",
+    "kind": "champion_deck",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678155,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678155-unleashed-champion-deck-vex.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=vex-champion-deck",
+    "fixed_contents": 1,
+    "notes": "Also contains 1 random Unleashed booster, paper playmat, deckbox and tokens (not in contents). Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-042",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-166",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "SFD-146",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-031",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-034",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-035",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-036",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-038",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-039",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-040",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "UNL-041",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-042",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "UNL-043",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-047",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-048",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-050",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-052",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-055",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-126",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-127",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-133",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-134",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-136",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-141",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-150",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-193",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-194",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-207",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-213",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-214",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-champion-deck-vi",
+    "name": "Unleashed - Champion Deck (Vi)",
+    "set_code": "UNL",
+    "kind": "champion_deck",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678157,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678157-unleashed-champion-deck-vi.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=vi-champion-deck",
+    "fixed_contents": 1,
+    "notes": "Also contains 1 random Unleashed booster, paper playmat, deckbox and tokens (not in contents). Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-036",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "SFD-009",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-001",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-002",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "UNL-006",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-008",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-009",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-010",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-012",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-015",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-017",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-018",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-024",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-026",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-030",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-153",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-154",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-156",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-159",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-161",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-163",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-175",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-176",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "UNL-187",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-188",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-215",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-217",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-218",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-champion-deck-vex-display",
+    "name": "Unleashed - Champion Deck (Vex) Display",
+    "set_code": "UNL",
+    "kind": "champion_deck",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678153,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678153-unleashed-champion-deck-vex-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/678153",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-champion-deck-vi-display",
+    "name": "Unleashed - Champion Deck (Vi) Display",
+    "set_code": "UNL",
+    "kind": "champion_deck",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678154,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678154-unleashed-champion-deck-vi-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/678154",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-pre-rift-kit-diana",
+    "name": "Unleashed - Pre-Rift Kit (Diana)",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678898-unleashed-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=unleashed-pre-rift-precon-diana",
+    "fixed_contents": 1,
+    "notes": "unconfirmed list — sources disagree: dotgg lists 14 cards (no champion), hextechanalytics 16 (adds UNL-079 Diana, Lunari and UNL-075 Gustwalker); this list is dotgg's 14 + UNL-079, Gustwalker dropped. 15-card seeded mini-precon: 1 of 6 varieties in the retail Unleashed - Pre-Rift Kit (TCGplayer 678898), which also has 5 boosters + promo Ashe, Focused (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "UNL-063",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-065",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-066",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-071",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-072",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-079",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-121",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-122",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-125",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-128",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-130",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-131",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-134",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-197",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-205",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-pre-rift-kit-ivern",
+    "name": "Unleashed - Pre-Rift Kit (Ivern)",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678898-unleashed-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=unleashed-pre-rift-precon-ivern",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Unleashed - Pre-Rift Kit (TCGplayer 678898), which also has 5 boosters + promo Ashe, Focused (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "UNL-032",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-033",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-036",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-044",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-046",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-051",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-154",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-155",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-156",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-159",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-160",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-166",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-167",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-195",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-217",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-pre-rift-kit-jhin",
+    "name": "Unleashed - Pre-Rift Kit (Jhin)",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678898-unleashed-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=unleashed-pre-rift-precon-jhin",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Unleashed - Pre-Rift Kit (TCGplayer 678898), which also has 5 boosters + promo Ashe, Focused (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "UNL-004",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-005",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-009",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-013",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-017",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-022",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-061",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-062",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-064",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-065",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-069",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-073",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-074",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-181",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-211",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-pre-rift-kit-khazix",
+    "name": "Unleashed - Pre-Rift Kit (Kha'Zix)",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678898-unleashed-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=unleashed-pre-rift-precon-khazix",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Unleashed - Pre-Rift Kit (TCGplayer 678898), which also has 5 boosters + promo Ashe, Focused (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "UNL-092",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-095",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-096",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-097",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-101",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-102",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-124",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-126",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-127",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-129",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-135",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-136",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-143",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-201",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-214",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-pre-rift-kit-master-yi",
+    "name": "Unleashed - Pre-Rift Kit (Master Yi)",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678898-unleashed-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=unleashed-pre-rift-precon-master-yi",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Unleashed - Pre-Rift Kit (TCGplayer 678898), which also has 5 boosters + promo Ashe, Focused (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "UNL-031",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-034",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-038",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-039",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-040",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-043",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-047",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-091",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-094",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-100",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-107",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-108",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-113",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-191",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-213",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-pre-rift-kit-vi",
+    "name": "Unleashed - Pre-Rift Kit (Vi)",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678898-unleashed-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=unleashed-pre-rift-precon-vi",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 6 varieties in the retail Unleashed - Pre-Rift Kit (TCGplayer 678898), which also has 5 boosters + promo Ashe, Focused (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "UNL-001",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-002",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-006",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-007",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-012",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-017",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-018",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-152",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-153",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-155",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-160",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-163",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-176",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-187",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-218",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "unl-pre-rift-event-kit",
+    "name": "Unleashed - Pre-Rift Event Kit",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678159,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678159-unleashed-pre-rift-event-kit.webp",
+    "source_url": "https://www.tcgplayer.com/product/678159",
+    "fixed_contents": 0,
+    "notes": "Event kit: 16 Pre-Rift kits + 1 booster display.",
+    "contents": []
+  },
+  {
+    "id": "unl-pre-rift-kit",
+    "name": "Unleashed - Pre-Rift Kit",
+    "set_code": "UNL",
+    "kind": "prerift_kit",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678898,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678898-unleashed-pre-rift-kit.webp",
+    "source_url": "https://www.tcgplayer.com/product/678898",
+    "fixed_contents": 0,
+    "notes": "Retail kit: 1 random 15-card mini-precon (6 varieties, see the per-champion Pre-Rift Kit products) + 5 boosters + promo.",
+    "contents": []
+  },
+  {
+    "id": "unl-booster-pack",
+    "name": "Unleashed - Booster Pack",
+    "set_code": "UNL",
+    "kind": "booster_pack",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678149,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678149-unleashed-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/678149",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-nexus-night-promo-pack",
+    "name": "Unleashed - Nexus Night Promo Pack",
+    "set_code": "UNL",
+    "kind": "booster_pack",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 695122,
+    "image_url": "https://static.dotgg.gg/riftbound/products/695122-unleashed-nexus-night-promo-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/695122",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-sleeved-booster-pack",
+    "name": "Unleashed - Sleeved Booster Pack",
+    "set_code": "UNL",
+    "kind": "booster_pack",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 696523,
+    "image_url": "https://static.dotgg.gg/riftbound/products/696523-unleashed-sleeved-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/696523",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-booster-display",
+    "name": "Unleashed - Booster Display",
+    "set_code": "UNL",
+    "kind": "booster_box",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678150,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678150-unleashed-booster-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/678150",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-booster-display-case",
+    "name": "Unleashed - Booster Display Case",
+    "set_code": "UNL",
+    "kind": "booster_box",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678152,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678152-unleashed-booster-display-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/678152",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-sleeved-booster-pack-art-bundle-set-of-3",
+    "name": "Unleashed - Sleeved Booster Pack Art Bundle [Set of 3]",
+    "set_code": "UNL",
+    "kind": "bundle",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 690175,
+    "image_url": "https://static.dotgg.gg/riftbound/products/690175-unleashed-sleeved-booster-pack-art-bundle-set-of-3.webp",
+    "source_url": "https://www.tcgplayer.com/product/690175",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "unl-vault-bundle",
+    "name": "Unleashed - Vault Bundle",
+    "set_code": "UNL",
+    "kind": "bundle",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 678162,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678162-unleashed-vault-bundle.webp",
+    "source_url": "https://www.tcgplayer.com/product/678162",
+    "fixed_contents": 0,
+    "notes": "6 boosters + 36 basic runes (6 each) + 3 double-sided full-art tokens; boosters are random so contents are not fixed.",
+    "contents": []
+  },
+  {
+    "id": "unl-vault-bundle-case",
+    "name": "Unleashed - Vault Bundle Case",
+    "set_code": "UNL",
+    "kind": "bundle",
+    "release_date": "2026-05-08",
+    "msrp_usd": null,
+    "tcgplayer_id": 711445,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711445-unleashed-vault-bundle-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/711445",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ven-showdown-deck-shen",
+    "name": "Vendetta - Showdown Deck (Shen)",
+    "set_code": "VEN",
+    "kind": "showdown_deck",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697971-vendetta-showdown-decks-zed-vs-shen.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=shen-showdown-deck",
+    "fixed_contents": 1,
+    "notes": "Half of Vendetta - Showdown Decks: Zed vs Shen (TCGplayer 697971); not sold separately. Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-042",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-043",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-058",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-241",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-280",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-156",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-026",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-027",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-028",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-030",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-031",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-033",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-034",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-042",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-043",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-116",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-117",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-119",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-123",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-126",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-127",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-128",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-129",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-135",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-138",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-147",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-148",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-159",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-166",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-showdown-deck-zed",
+    "name": "Vendetta - Showdown Deck (Zed)",
+    "set_code": "VEN",
+    "kind": "showdown_deck",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697971-vendetta-showdown-decks-zed-vs-shen.webp",
+    "source_url": "https://raw.githubusercontent.com/Russeus/RB-TCG-Arena/main/Riftbound-Decks.json",
+    "fixed_contents": 1,
+    "notes": "Half of Vendetta - Showdown Decks: Zed vs Shen (TCGplayer 697971); not sold separately. dotgg slug zed-showdown-deck is corrupt (112 cards = Zed+Shen merged), so the list comes from the Russeus RB-TCG-Arena JSON. Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-166",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-185",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-298",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-002",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-007",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-008",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-012",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-013",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-014",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-017",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-020",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-023",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-093",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-095",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-096",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-101",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-102",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-105",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-106",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-110",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-112",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-143",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-144",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-165",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-166",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-showdown-decks-zed-vs-shen",
+    "name": "Vendetta - Showdown Decks: Zed vs Shen",
+    "set_code": "VEN",
+    "kind": "showdown_deck",
+    "release_date": "2026-07-31",
+    "msrp_usd": 34.99,
+    "tcgplayer_id": 697971,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697971-vendetta-showdown-decks-zed-vs-shen.webp",
+    "source_url": "https://riftmana.com/preconstructed-vendetta-champion-starter-decks-riftbound-tcg/",
+    "fixed_contents": 1,
+    "notes": "Both 56-card decks (Zed + Shen). Also contains 2 random Vendetta boosters, 2 paper playmats, 2 paper deckboxes and tokens (not in contents). Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-042",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-043",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-058",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-166",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-185",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 6
+      },
+      {
+        "card_id": "OGN-241",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-280",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "OGN-298",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "UNL-156",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-002",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-007",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-008",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-012",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-013",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-014",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-017",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-020",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-023",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-026",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-027",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-028",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-030",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-031",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-033",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-034",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-042",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-043",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-093",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-095",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-096",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-101",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-102",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-105",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-106",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-110",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-112",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-116",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-117",
+        "finish": "normal",
+        "qty": 3
+      },
+      {
+        "card_id": "VEN-119",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-123",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-126",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-127",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-128",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-129",
+        "finish": "normal",
+        "qty": 2
+      },
+      {
+        "card_id": "VEN-135",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-138",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-143",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-144",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-147",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-148",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-159",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-165",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-166",
+        "finish": "normal",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "ven-showdown-decks-zed-vs-shen-display",
+    "name": "Vendetta - Showdown Decks: Zed vs Shen Display",
+    "set_code": "VEN",
+    "kind": "showdown_deck",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 706237,
+    "image_url": "https://static.dotgg.gg/riftbound/products/706237-vendetta-showdown-decks-zed-vs-shen-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/706237",
+    "fixed_contents": 0,
+    "notes": "Display of 4 × Showdown Decks: Zed vs Shen.",
+    "contents": []
+  },
+  {
+    "id": "ven-pre-rift-kit-akali",
+    "name": "Vendetta - Pre-Rift Kit (Akali)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-akali",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-001",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-002",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-004",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-008",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-009",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-011",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-012",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-024",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-026",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-028",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-031",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-033",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-038",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-139",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-166",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-ambessa",
+    "name": "Vendetta - Pre-Rift Kit (Ambessa)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-ambessa",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-070",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-071",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-072",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-074",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-078",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-082",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-084",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-118",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-119",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-122",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-123",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-127",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-128",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-153",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-163",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-jayce",
+    "name": "Vendetta - Pre-Rift Kit (Jayce)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-jayce",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-047",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-048",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-051",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-054",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-058",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-059",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-060",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-073",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-075",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-076",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-077",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-082",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-088",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-149",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-161",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-kennen",
+    "name": "Vendetta - Pre-Rift Kit (Kennen)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-kennen",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-093",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-098",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-099",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-100",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-101",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-104",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-105",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-116",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-120",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-121",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-122",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-127",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-135",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-155",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-165",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-mel",
+    "name": "Vendetta - Pre-Rift Kit (Mel)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-mel",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-047",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-048",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-049",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-051",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-053",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-054",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-057",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-059",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-093",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-095",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-104",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-106",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-110",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-151",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-163",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-nasus",
+    "name": "Vendetta - Pre-Rift Kit (Nasus)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-nasus",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-025",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-029",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-030",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-032",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-036",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-037",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-047",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-049",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-050",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-051",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-053",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-057",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-063",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-145",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-160",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-renekton",
+    "name": "Vendetta - Pre-Rift Kit (Renekton)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-renekton",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-001",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-005",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-006",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-008",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-009",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-012",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-019",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-070",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-071",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-072",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-074",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-078",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-083",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-141",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-162",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-shen",
+    "name": "Vendetta - Pre-Rift Kit (Shen)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-shen",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-024",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-025",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-027",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-028",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-032",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-034",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-042",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-117",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-118",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-119",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-123",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-126",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-129",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-147",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-159",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-kit-zed",
+    "name": "Vendetta - Pre-Rift Kit (Zed)",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": null,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://api.dotgg.gg/cgfw/getdeck?game=riftbound&slug=pre-rift-kit-zed",
+    "fixed_contents": 1,
+    "notes": "15-card seeded mini-precon: 1 of 9 varieties in the retail Vendetta - Pre-Rift Kit (TCGplayer 697969), which also has 5 boosters + promo Riven, Shattered (not in contents). Runes not included in the kit.",
+    "contents": [
+      {
+        "card_id": "VEN-002",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-004",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-007",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-008",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-010",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-012",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-094",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-095",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-096",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-100",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-103",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-105",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-112",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-143",
+        "finish": "normal",
+        "qty": 1
+      },
+      {
+        "card_id": "VEN-165",
+        "finish": "normal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "ven-pre-rift-event-kit",
+    "name": "Vendetta - Pre-Rift Event Kit",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 707963,
+    "image_url": "https://static.dotgg.gg/riftbound/products/707963-vendetta-pre-rift-event-kit.webp",
+    "source_url": "https://www.tcgplayer.com/product/707963",
+    "fixed_contents": 0,
+    "notes": "Event kit: 16 Pre-Rift kits + 1 booster display.",
+    "contents": []
+  },
+  {
+    "id": "ven-pre-rift-kit",
+    "name": "Vendetta - Pre-Rift Kit",
+    "set_code": "VEN",
+    "kind": "prerift_kit",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 697969,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697969-vendetta-pre-rift-kit.webp",
+    "source_url": "https://www.tcgplayer.com/product/697969",
+    "fixed_contents": 0,
+    "notes": "Retail kit: 1 random 15-card mini-precon (9 varieties, see the per-champion Pre-Rift Kit products) + 5 boosters + promo.",
+    "contents": []
+  },
+  {
+    "id": "ven-booster-pack",
+    "name": "Vendetta - Booster Pack",
+    "set_code": "VEN",
+    "kind": "booster_pack",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 693377,
+    "image_url": "https://static.dotgg.gg/riftbound/products/693377-vendetta-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/693377",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ven-nexus-night-promo-pack",
+    "name": "Vendetta - Nexus Night Promo Pack",
+    "set_code": "VEN",
+    "kind": "booster_pack",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 711001,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711001-vendetta-nexus-night-promo-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/711001",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ven-sleeved-booster-pack",
+    "name": "Vendetta - Sleeved Booster Pack",
+    "set_code": "VEN",
+    "kind": "booster_pack",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 710855,
+    "image_url": "https://static.dotgg.gg/riftbound/products/710855-vendetta-sleeved-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/710855",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ven-booster-display",
+    "name": "Vendetta - Booster Display",
+    "set_code": "VEN",
+    "kind": "booster_box",
+    "release_date": "2026-07-31",
+    "msrp_usd": 119.99,
+    "tcgplayer_id": 693380,
+    "image_url": "https://static.dotgg.gg/riftbound/products/693380-vendetta-booster-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/693380",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ven-booster-display-case",
+    "name": "Vendetta - Booster Display Case",
+    "set_code": "VEN",
+    "kind": "booster_box",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 693382,
+    "image_url": "https://static.dotgg.gg/riftbound/products/693382-vendetta-booster-display-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/693382",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ven-sleeved-booster-pack-art-bundle-set-of-3",
+    "name": "Vendetta - Sleeved Booster Pack Art Bundle [Set of 3]",
+    "set_code": "VEN",
+    "kind": "bundle",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 710856,
+    "image_url": "https://static.dotgg.gg/riftbound/products/710856-vendetta-sleeved-booster-pack-art-bundle-set-of-3.webp",
+    "source_url": "https://www.tcgplayer.com/product/710856",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "ven-vault-bundle",
+    "name": "Vendetta - Vault Bundle",
+    "set_code": "VEN",
+    "kind": "bundle",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 697970,
+    "image_url": "https://static.dotgg.gg/riftbound/products/697970-vendetta-vault-bundle.webp",
+    "source_url": "https://www.tcgplayer.com/product/697970",
+    "fixed_contents": 0,
+    "notes": "6 boosters + 36 basic runes (6 each) + 3 double-sided full-art tokens; boosters are random so contents are not fixed.",
+    "contents": []
+  },
+  {
+    "id": "ven-vault-bundle-case",
+    "name": "Vendetta - Vault Bundle Case",
+    "set_code": "VEN",
+    "kind": "bundle",
+    "release_date": "2026-07-31",
+    "msrp_usd": null,
+    "tcgplayer_id": 711444,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711444-vendetta-vault-bundle-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/711444",
+    "fixed_contents": 0,
+    "notes": null,
+    "contents": []
+  },
+  {
+    "id": "rad-showdown-decks-evelynn-vs-seraphine",
+    "name": "Radiance - Showdown Decks: Evelynn vs Seraphine",
+    "set_code": null,
+    "kind": "showdown_deck",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711368,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711368-radiance-showdown-decks-evelynn-vs-seraphine.webp",
+    "source_url": "https://www.tcgplayer.com/product/711368",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "rad-showdown-decks-evelynn-vs-seraphine-display",
+    "name": "Radiance - Showdown Decks: Evelynn vs Seraphine Display",
+    "set_code": null,
+    "kind": "showdown_deck",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711369,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711369-radiance-showdown-decks-evelynn-vs-seraphine-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/711369",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "rad-booster-pack",
+    "name": "Radiance - Booster Pack",
+    "set_code": null,
+    "kind": "booster_pack",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711362,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711362-radiance-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/711362",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "rad-sleeved-booster-pack",
+    "name": "Radiance - Sleeved Booster Pack",
+    "set_code": null,
+    "kind": "booster_pack",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711363,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711363-radiance-sleeved-booster-pack.webp",
+    "source_url": "https://www.tcgplayer.com/product/711363",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "rad-booster-display",
+    "name": "Radiance - Booster Display",
+    "set_code": null,
+    "kind": "booster_box",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711365,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711365-radiance-booster-display.webp",
+    "source_url": "https://www.tcgplayer.com/product/711365",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "rad-booster-display-case",
+    "name": "Radiance - Booster Display Case",
+    "set_code": null,
+    "kind": "booster_box",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711366,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711366-radiance-booster-display-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/711366",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "riftbound-bulk-runes",
+    "name": "Riftbound Bulk Runes",
+    "set_code": null,
+    "kind": "bundle",
+    "msrp_usd": 19.99,
+    "tcgplayer_id": 678130,
+    "source_url": "https://www.tcgplayer.com/product/678130",
+    "fixed_contents": 1,
+    "notes": "324 basic runes, 54 of each domain (UVS RB-01RS01-EN). Printing assumed to be the OGN basics. Runes counted as the OGN basic printings (OGN-007/042/089/126/166/214).",
+    "contents": [
+      {
+        "card_id": "OGN-007",
+        "finish": "normal",
+        "qty": 54
+      },
+      {
+        "card_id": "OGN-042",
+        "finish": "normal",
+        "qty": 54
+      },
+      {
+        "card_id": "OGN-089",
+        "finish": "normal",
+        "qty": 54
+      },
+      {
+        "card_id": "OGN-126",
+        "finish": "normal",
+        "qty": 54
+      },
+      {
+        "card_id": "OGN-166",
+        "finish": "normal",
+        "qty": 54
+      },
+      {
+        "card_id": "OGN-214",
+        "finish": "normal",
+        "qty": 54
+      }
+    ],
+    "release_date": "2026-02-13",
+    "image_url": "https://static.dotgg.gg/riftbound/products/678130-riftbound-bulk-runes.webp"
+  },
+  {
+    "id": "rad-sleeved-booster-pack-art-bundle-set-of-3",
+    "name": "Radiance - Sleeved Booster Pack Art Bundle (Set of 3)",
+    "set_code": null,
+    "kind": "bundle",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711364,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711364-radiance-sleeved-booster-pack-art-bundle-set-of-3.webp",
+    "source_url": "https://www.tcgplayer.com/product/711364",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "rad-vault-bundle",
+    "name": "Radiance - Vault Bundle",
+    "set_code": null,
+    "kind": "bundle",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711372,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711372-radiance-vault-bundle.webp",
+    "source_url": "https://www.tcgplayer.com/product/711372",
+    "fixed_contents": 0,
+    "notes": "6 boosters + 36 basic runes (6 each) + 3 foil promo tokens; boosters are random so contents are not fixed. Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "rad-vault-bundle-case",
+    "name": "Radiance - Vault Bundle Case",
+    "set_code": null,
+    "kind": "bundle",
+    "release_date": "2026-10-23",
+    "msrp_usd": null,
+    "tcgplayer_id": 711446,
+    "image_url": "https://static.dotgg.gg/riftbound/products/711446-radiance-vault-bundle-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/711446",
+    "fixed_contents": 0,
+    "notes": "Set/group: Radiance.",
+    "contents": []
+  },
+  {
+    "id": "riftbound-bulk-runes-case",
+    "name": "Riftbound Bulk Runes Case",
+    "set_code": null,
+    "kind": "bundle",
+    "release_date": "2026-02-13",
+    "msrp_usd": null,
+    "tcgplayer_id": 678131,
+    "image_url": "https://static.dotgg.gg/riftbound/products/678131-riftbound-bulk-runes-case.webp",
+    "source_url": "https://www.tcgplayer.com/product/678131",
+    "fixed_contents": 0,
+    "notes": "Case of Riftbound Bulk Runes boxes.",
+    "contents": []
+  },
+  {
+    "id": "riftbound-worlds-bundle-2025",
+    "name": "Riftbound Worlds Bundle 2025",
+    "set_code": null,
+    "kind": "bundle",
+    "release_date": "2025-10-28",
+    "msrp_usd": 99.99,
+    "tcgplayer_id": 658333,
+    "image_url": "https://static.dotgg.gg/riftbound/products/658333-riftbound-worlds-bundle-2025.webp",
+    "source_url": "https://www.tcgplayer.com/product/658333",
+    "fixed_contents": 0,
+    "notes": "Foil playmat, deckbox, sleeves, Panda Teemo promo, 3 oversized battlefields; promo printings not in the Riot gallery. Set/group: Riftbound Worlds Bundle 2025.",
+    "contents": []
+  },
+  {
+    "id": "arcane-box-set",
+    "name": "Riftbound: League of Legends Arcane Box Set",
+    "set_code": null,
+    "kind": "bundle",
+    "release_date": "2025-10-31",
+    "msrp_usd": 69.99,
+    "tcgplayer_id": 655495,
+    "image_url": "https://static.dotgg.gg/riftbound/products/655495-riftbound-league-of-legends-arcane-box-set.webp",
+    "source_url": "https://www.tcgplayer.com/product/655495",
+    "fixed_contents": 0,
+    "notes": "6 foil Arcane-art champions (Jinx, Vi, Heimerdinger, Caitlyn, Viktor, Warwick) + display case; these printings are not in the Riot gallery yet, so contents are not listed. Set/group: Riftbound Promotional Cards.",
+    "contents": []
+  },
+  {
+    "id": "secret-garden-box",
+    "name": "Secret Garden Box",
+    "set_code": null,
+    "kind": "bundle",
+    "release_date": "2025-07-30",
+    "msrp_usd": 70,
+    "tcgplayer_id": 710238,
+    "image_url": "https://static.dotgg.gg/riftbound/products/710238-secret-garden-box.webp",
+    "source_url": "https://www.tcgplayer.com/product/710238",
+    "fixed_contents": 0,
+    "notes": "3 alt-art cards (Ivern, Lillia, Ultrasoft Poro) + 5 alt-art tokens + 3 Unleashed boosters; SGN printings not in the Riot gallery. Set/group: Secret Garden.",
+    "contents": []
+  }
+]
