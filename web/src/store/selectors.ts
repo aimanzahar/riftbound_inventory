@@ -92,7 +92,8 @@ export function computeTotals(cardsById: Map<string, Card>, inventory: Map<strin
     canonOwned.add(canonicalOf(card));
     copies += row.qty;
     if (row.finish === 'foil') foil += row.qty;
-    const p = prices.get(invKey(row.card_id, row.finish)) ?? prices.get(invKey(row.card_id, 'normal'));
+    // exact finish → normal → foil (Rares/Epics are foil-only, so a "normal" row still values at the foil price)
+    const p = prices.get(invKey(row.card_id, row.finish)) ?? prices.get(invKey(row.card_id, 'normal')) ?? prices.get(invKey(row.card_id, 'foil'));
     const m = p?.usd_market ?? p?.usd_mid ?? null;
     if (m !== null && m !== undefined) {
       usd += m * row.qty;

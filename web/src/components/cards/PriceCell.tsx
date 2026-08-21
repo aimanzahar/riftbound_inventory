@@ -40,11 +40,11 @@ export function PriceCell({ cardId, finish = 'normal', size = 'sm', inline, clas
       </span>
     );
   }
-  const title = `${fmtUSD(usd)} TCGplayer market${fx ? ` · FX ${fx.rate.toFixed(3)}` : ''}${stale ? ' · stale' : ''}${approx ? ' · normal-finish price' : ''}`;
+  const title = `${fmtUSD(usd)} TCGplayer market${fx ? ` · FX ${fx.rate.toFixed(3)}` : ''}${stale ? ' · stale' : ''}${foilOnly ? ' · foil-only printing (foil price)' : approx ? ' · normal-finish price' : ''}`;
   return (
     <span className={cx('tabular inline-flex min-w-0', inline ? 'items-baseline gap-1.5' : 'flex-col leading-tight', stale ? 'text-warning' : 'text-fg', className)} title={title}>
       <span className={cx('truncate', primary)}>
-        {approx && <span className="mr-0.5 font-normal text-muted">≈</span>}
+        {foilOnly ? <span className="foil-text mr-0.5 font-normal">✦</span> : approx && <span className="mr-0.5 font-normal text-muted">≈</span>}
         {myr !== null ? fmtMYR(myr) : fmtUSD(usd)}
       </span>
       {myr !== null && <span className={cx('truncate', secondary, stale ? 'text-warning/80' : 'text-muted')}>{fmtUSD(usd, { symbol: '$' })}</span>}

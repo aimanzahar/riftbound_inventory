@@ -54,8 +54,13 @@ export function previewPurchase(db: Db, productId: string, qty: number): Purchas
     }
     for (let i = 0; i < ids.length; i += 500) {
       const chunk = ids.slice(i, i + 500);
-      for (const r of all<{ card_id: string; usd_market: number | null }>(db, `SELECT card_id, usd_market FROM prices WHERE finish='normal' AND card_id IN (${chunk.map(() => '?').join(',')})`, ...chunk))
-        if (r.usd_market !== null) priceByCard.set(r.card_id, Number(r.usd_market));
+      // prefer the normal-finish price; foil-only printings (Rares/Epics) fall back to their foil price
+      for (const r of all<{ card_id: string; finish: string; usd_market: number | null }>(
+        db,
+        `SELECT card_id, finish, usd_market FROM prices WHERE card_id IN (${chunk.map(() => '?').join(',')}) ORDER BY card_id, CASE finish WHEN 'normal' THEN 0 ELSE 1 END`,
+        ...chunk,
+      ))
+        if (r.usd_market !== null && !priceByCard.has(r.card_id)) priceByCard.set(r.card_id, Number(r.usd_market));
     }
     const tb = timesBought(db, product.id);
     return analyzePurchase({
