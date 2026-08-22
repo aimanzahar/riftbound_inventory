@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Activity, Boxes, LayoutGrid, ScanLine, Settings, Swords } from 'lucide-react';
+import { Activity, Boxes, Layers, LayoutGrid, ScanLine, Settings, Swords } from 'lucide-react';
 import { go, useRoute, type Page } from '../../lib/router.ts';
 import { useStore } from '../../store/store.ts';
 import { cx } from '../../lib/format.ts';
@@ -8,6 +8,7 @@ export const NAV: Array<{ page: Page; label: string; icon: ReactNode; short: str
   { page: 'collection', label: 'Collection', short: 'Cards', icon: <LayoutGrid className="size-[18px]" aria-hidden /> },
   { page: 'products', label: 'Products', short: 'Products', icon: <Boxes className="size-[18px]" aria-hidden /> },
   { page: 'meta', label: 'Meta decks', short: 'Meta', icon: <Swords className="size-[18px]" aria-hidden /> },
+  { page: 'decks', label: 'My decks', short: 'Decks', icon: <Layers className="size-[18px]" aria-hidden /> },
   { page: 'pack', label: 'Pack mode', short: 'Pack', icon: <ScanLine className="size-[18px]" aria-hidden /> },
   { page: 'activity', label: 'Activity', short: 'Activity', icon: <Activity className="size-[18px]" aria-hidden /> },
   { page: 'settings', label: 'Settings', short: 'Settings', icon: <Settings className="size-[18px]" aria-hidden /> },
@@ -82,7 +83,7 @@ export function NavRail({ className }: { className?: string }) {
 export function BottomTabs({ className }: { className?: string }) {
   const route = useRoute();
   return (
-    <nav aria-label="Primary" className={cx('pb-safe grid grid-cols-6 border-t border-border bg-surface/95 backdrop-blur', className)}>
+    <nav aria-label="Primary" className={cx('pb-safe grid grid-cols-7 border-t border-border bg-surface/95 backdrop-blur', className)}>
       {NAV.map((n) => {
         const active = route.page === n.page;
         return (

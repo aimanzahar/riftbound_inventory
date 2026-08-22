@@ -14,14 +14,15 @@ import { ChangeItem } from './ChangeItem.tsx';
 // filters
 // ---------------------------------------------------------------------------
 
-export type KindFilter = 'all' | 'inventory' | 'purchases' | 'packs' | 'csv' | 'tips' | 'system';
-export const KIND_FILTERS: readonly KindFilter[] = ['all', 'inventory', 'purchases', 'packs', 'csv', 'tips', 'system'];
+export type KindFilter = 'all' | 'inventory' | 'purchases' | 'packs' | 'csv' | 'decks' | 'tips' | 'system';
+export const KIND_FILTERS: readonly KindFilter[] = ['all', 'inventory', 'purchases', 'packs', 'csv', 'decks', 'tips', 'system'];
 export const KIND_FILTER_LABELS: Record<KindFilter, string> = {
   all: 'All',
   inventory: 'Inventory',
   purchases: 'Purchases',
   packs: 'Packs',
   csv: 'CSV',
+  decks: 'Decks',
   tips: 'Tips',
   system: 'System',
 };
@@ -43,6 +44,8 @@ function serverQuery(k: KindFilter): { kind?: string; reason?: string } {
       return { kind: 'inventory', reason: 'pack' };
     case 'csv':
       return { kind: 'inventory', reason: 'csv' };
+    case 'decks':
+      return { kind: 'deck' };
     case 'tips':
       return { kind: 'tip' };
     default:
@@ -63,6 +66,9 @@ export function changeMatches(c: Change, f: FeedFilter): boolean {
       break;
     case 'csv':
       if (c.kind !== 'inventory' || c.reason !== 'csv') return false;
+      break;
+    case 'decks':
+      if (c.kind !== 'deck') return false;
       break;
     case 'tips':
       if (c.kind !== 'tip') return false;

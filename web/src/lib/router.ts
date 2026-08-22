@@ -1,8 +1,8 @@
 import { useSyncExternalStore } from 'react';
 
-export type Page = 'collection' | 'products' | 'meta' | 'pack' | 'activity' | 'settings';
+export type Page = 'collection' | 'products' | 'meta' | 'decks' | 'pack' | 'activity' | 'settings';
 
-export const PAGES: readonly Page[] = ['collection', 'products', 'meta', 'pack', 'activity', 'settings'];
+export const PAGES: readonly Page[] = ['collection', 'products', 'meta', 'decks', 'pack', 'activity', 'settings'];
 
 export interface Route {
   page: Page;
@@ -18,7 +18,8 @@ const PAGE_BY_SEGMENT: Record<string, Page> = {
   collection: 'collection',
   products: 'products',
   meta: 'meta',
-  decks: 'meta',
+  archetypes: 'meta', // '#/decks' used to alias the meta page; it now belongs to your own decks
+  decks: 'decks',
   pack: 'pack',
   activity: 'activity',
   settings: 'settings',
@@ -146,6 +147,8 @@ export function pageTitle(p: Page): string {
       return 'Products';
     case 'meta':
       return 'Meta';
+    case 'decks':
+      return 'My decks';
     case 'pack':
       return 'Pack mode';
     case 'activity':

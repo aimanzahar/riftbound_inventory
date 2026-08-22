@@ -108,6 +108,44 @@ export interface Deck {
   unresolved: DeckUnresolved[];
 }
 
+// ---- user-authored decks (distinct from the scraped meta `Deck` above) ----
+
+export interface UserDeckCard {
+  /** a PRINTING id — completion and playset math canonicalise via `variant_of` */
+  card_id: string;
+  section: DeckSection;
+  qty: number;
+}
+
+export interface UserDeck {
+  id: string;
+  name: string;
+  notes: string;
+  color: string | null;
+  archived: number;
+  created_at: string;
+  created_by: string | null;
+  updated_at: string;
+  updated_by: string | null;
+  cards: UserDeckCard[];
+}
+
+export type UserDeckReason = 'create' | 'update' | 'cards' | 'delete';
+
+export interface UserDeckLine extends UserDeckCard {
+  prev_qty: number;
+}
+
+export interface UserDeckPayload {
+  deck_id: string;
+  name: string;
+  /** full post-state, or null when deleted — lets clients apply SSE changes without a refetch */
+  deck: UserDeck | null;
+  /** present when reason === 'cards'; absolute qty per line plus prev_qty so the change can be undone */
+  lines?: UserDeckLine[];
+  summary: { cards: number; copies_delta: number };
+}
+
 export interface InventoryRow {
   card_id: string;
   finish: Finish;
@@ -171,7 +209,7 @@ export interface InvLine {
   clamped?: true;
 }
 
-export type ChangeKind = 'inventory' | 'tip' | 'prices' | 'fx' | 'tips' | 'catalog' | 'settings';
+export type ChangeKind = 'inventory' | 'tip' | 'prices' | 'fx' | 'tips' | 'catalog' | 'settings' | 'deck';
 export type InventoryReason = 'manual' | 'pack' | 'product' | 'csv' | 'note' | 'undo';
 export type InventoryMode = 'add' | 'set' | 'replace';
 
@@ -219,7 +257,8 @@ export type ChangePayload =
   | FxPayload
   | TipsPayload
   | CatalogPayload
-  | SettingsPayload;
+  | SettingsPayload
+  | UserDeckPayload;
 
 export interface Change {
   seq: number;
@@ -291,6 +330,7 @@ export interface State {
   tips: Tip[];
   devices: Device[];
   purchases: PurchaseRecord[];
+  user_decks: UserDeck[];
   settings: Settings;
   jobs: JobStatus[];
   server: ServerInfo;
@@ -317,6 +357,35 @@ export interface InventoryResponse {
   change?: Change;
   noop?: true;
   replayed?: true;
+}
+
+export interface UserDeckCreateRequest {
+  op_id: string;
+  name: string;
+  notes?: string;
+  color?: string | null;
+}
+
+export interface UserDeckUpdateRequest {
+  op_id: string;
+  name?: string;
+  notes?: string;
+  color?: string | null;
+  archived?: boolean;
+}
+
+export interface UserDeckCardsRequest {
+  op_id: string;
+  /** add = apply deltas (a line falling to <= 0 is removed); set = absolute qty */
+  mode: 'add' | 'set';
+  items: UserDeckCard[];
+}
+
+export interface UserDeckResponse {
+  deck: UserDeck | null;
+  change?: Change;
+  replayed?: true;
+  noop?: true;
 }
 
 export type PurchaseLineStatus = 'new' | 'partial' | 'owned';

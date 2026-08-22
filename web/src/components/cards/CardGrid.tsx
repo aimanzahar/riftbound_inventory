@@ -13,6 +13,8 @@ const MIN_TILE_DESKTOP = 150;
 const MIN_TILE_PHONE = 110;
 /** text block below the image (name, meta, footer) incl. tile padding */
 const TILE_EXTRA = 108;
+/** the deck-chip row, reserved on every tile once any deck exists so row heights stay uniform */
+const TILE_CHIP_ROW = 20;
 
 interface Layout {
   width: number;
@@ -23,7 +25,7 @@ interface Layout {
   rowH: number;
 }
 
-function computeLayout(width: number, coarse: boolean): Layout {
+function computeLayout(width: number, coarse: boolean, chipRow: boolean): Layout {
   const phone = width < 640;
   const gap = phone ? GAP_PHONE : GAP_DESKTOP;
   const pad = phone ? PAD_PHONE : PAD_DESKTOP;
@@ -31,14 +33,15 @@ function computeLayout(width: number, coarse: boolean): Layout {
   const inner = Math.max(0, width - pad * 2);
   const cols = Math.max(2, Math.floor((inner + gap) / (min + gap)));
   const tileW = (inner - gap * (cols - 1)) / cols;
-  const rowH = Math.round(tileW * 1.4 + TILE_EXTRA + (coarse ? 12 : 0) + gap);
+  const rowH = Math.round(tileW * 1.4 + TILE_EXTRA + (chipRow ? TILE_CHIP_ROW : 0) + (coarse ? 12 : 0) + gap);
   return { width, cols, tileW, gap, pad, rowH };
 }
 
 /** Virtualised tile grid: rows virtualised, columns from ResizeObserver, roving tabindex + arrow keys. */
 export function CardGrid({ ids, dimWhenZero = true }: { ids: string[]; dimWhenZero?: boolean }) {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [layout, setLayout] = useState<Layout>(() => computeLayout(typeof window !== 'undefined' ? Math.min(window.innerWidth, 1200) : 1000, false));
+  const hasDecks = useStore((s) => s.user_decks.length > 0);
+  const [layout, setLayout] = useState<Layout>(() => computeLayout(typeof window !== 'undefined' ? Math.min(window.innerWidth, 1200) : 1000, false, false));
   const [focusIdx, setFocusIdx] = useState(0);
   const pendingFocus = useRef<number | null>(null);
   const adjust = useStore((s) => s.adjust);
@@ -49,15 +52,15 @@ export function CardGrid({ ids, dimWhenZero = true }: { ids: string[]; dimWhenZe
     const el = scrollRef.current;
     if (!el) return;
     const coarse = window.matchMedia?.('(pointer: coarse)').matches ?? false;
-    const measure = () => {
+    const measure = (force = false) => {
       const w = el.clientWidth;
-      if (w > 0) setLayout((l) => (l.width === w ? l : computeLayout(w, coarse)));
+      if (w > 0) setLayout((l) => (l.width === w && !force ? l : computeLayout(w, coarse, hasDecks)));
     };
-    measure();
-    const ro = new ResizeObserver(measure);
+    measure(true); // the chip row appears/disappears with the first/last deck
+    const ro = new ResizeObserver(() => measure());
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [hasDecks]);
 
   const rowCount = Math.ceil(ids.length / layout.cols);
   const virtualizer = useVirtualizer({

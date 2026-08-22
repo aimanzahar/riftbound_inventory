@@ -121,8 +121,11 @@ export function pickRepresentative(decks: Deck[]): Deck | null {
   return [...pool].sort(byRecent)[0] ?? null;
 }
 
+/** The parts of a deck the completion maths needs — user-built decks satisfy this too. */
+export type DeckLike = Pick<Deck, 'cards' | 'legend_card_id'>;
+
 /** Deck lines incl. the legend itself when the source list omitted it. */
-export function deckLines(deck: Deck): DeckCard[] {
+export function deckLines(deck: DeckLike): DeckCard[] {
   const lines = [...deck.cards];
   if (deck.legend_card_id && !lines.some((l) => l.section === 'legend')) lines.unshift({ card_id: deck.legend_card_id, section: 'legend', qty: 1 });
   return lines;
@@ -196,7 +199,7 @@ export interface DeckCompletionInfo {
 const SECTION_RANK = new Map<DeckSection, number>(SECTION_ORDER.map((s, i) => [s, i]));
 
 /** owned = Σ min(needed, owned canonical copies), allocated section by section so a card split between main and side shows the right chips. */
-export function computeDeckCompletion(deck: Deck, cardsById: Map<string, Card>, ownedByCanonical: Map<string, number>, prices: Map<string, Price> | null): DeckCompletionInfo {
+export function computeDeckCompletion(deck: DeckLike, cardsById: Map<string, Card>, ownedByCanonical: Map<string, number>, prices: Map<string, Price> | null): DeckCompletionInfo {
   const nameOf = (id: string) => cardsById.get(id)?.name ?? id;
   const sorted = deckLines(deck).sort(
     (a, b) => (SECTION_RANK.get(a.section) ?? 99) - (SECTION_RANK.get(b.section) ?? 99) || nameOf(a.card_id).localeCompare(nameOf(b.card_id)) || a.card_id.localeCompare(b.card_id),
@@ -464,7 +467,7 @@ export function useMetaModel(query: MetaQuery, cardCanon: string | null): MetaMo
   return useMemo(() => computeMetaModel({ decks, query, cardCanon, cardsById, ownedByCanonical, prices }), [decks, query, cardCanon, cardsById, ownedByCanonical, prices]);
 }
 
-export function useDeckCompletion(deck: Deck | null | undefined): DeckCompletionInfo | null {
+export function useDeckCompletion(deck: DeckLike | null | undefined): DeckCompletionInfo | null {
   const cardsById = useStore((s) => s.cardsById);
   const prices = useStore((s) => s.prices);
   const ownedByCanonical = useOwnedByCanonical();

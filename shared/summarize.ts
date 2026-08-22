@@ -1,5 +1,5 @@
 // Human-readable one-liners for change rows (toasts, activity feed, pack log). Pure.
-import type { Change, InventoryPayload, TipPayload, PricesPayload, FxPayload, TipsPayload, CatalogPayload } from './types.ts';
+import type { Change, InventoryPayload, TipPayload, PricesPayload, FxPayload, TipsPayload, CatalogPayload, UserDeckPayload } from './types.ts';
 
 export interface MinimalCard {
   id: string;
@@ -55,6 +55,21 @@ export function changeSummary(c: Change, cardsById: Map<string, MinimalCard> | (
     }
     case 'settings':
       return { text: `${who} changed settings`, cardIds: [] };
+    case 'deck': {
+      const p = c.payload as UserDeckPayload;
+      const ids = [...new Set((p.lines ?? []).map((l) => l.card_id))];
+      if (c.reason === 'create') return { text: `${who} created the deck “${p.name}”`, cardIds: [] };
+      if (c.reason === 'delete') return { text: `${who} deleted the deck “${p.name}”`, cardIds: [] };
+      if (c.reason === 'update') return { text: `${who} edited the deck “${p.name}”`, cardIds: [] };
+      if (ids.length === 1) {
+        const l = (p.lines ?? [])[0];
+        const name = lookup(l.card_id)?.name ?? l.card_id;
+        return { text: `${who} ${signed(l.qty - l.prev_qty)} ${name} in “${p.name}” → ${l.qty}`, cardIds: ids };
+      }
+      const names = ids.slice(0, 3).map((id) => lookup(id)?.name ?? id);
+      const more = ids.length > 3 ? `, +${ids.length - 3} more` : '';
+      return { text: `${who} ${signed(p.summary.copies_delta)} cards in “${p.name}” (${names.join(', ')}${more})`, cardIds: ids };
+    }
     default:
       return { text: `${who} made a change`, cardIds: [] };
   }

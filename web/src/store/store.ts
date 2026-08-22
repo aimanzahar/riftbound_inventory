@@ -26,6 +26,9 @@ import type {
   State,
   Tip,
   TipPayload,
+  UserDeck,
+  UserDeckCard,
+  UserDeckPayload,
 } from '../../../shared/types.ts';
 import { MAX_ITEMS_PER_REQUEST, type JobName } from '../../../shared/constants.ts';
 import { changeSummary } from '../../../shared/summarize.ts';
@@ -63,6 +66,8 @@ export interface AppStore {
   devices: Device[];
   presence: PresenceEntry[];
   purchases: PurchaseRecord[];
+  /** decks you built yourself (server-owned, synced over SSE) — distinct from `decks`, which is the meta */
+  user_decks: UserDeck[];
   settings: Settings;
   jobs: JobStatus[];
   jobLive: JobLive;
@@ -109,6 +114,14 @@ export interface AppStore {
   buyProduct(productId: string, qty: number): Promise<boolean>;
   /** CSV import: POST /api/inventory (reason csv) in ≤5000-item chunks; toasts with Undo. */
   importCsv(args: { mode: InventoryMode; items: InventoryItem[]; csv_filename?: string }): Promise<boolean>;
+
+  // ---- decks ----
+  /** Resolves with the new deck, or null on failure. */
+  createDeck(name: string, patch?: { notes?: string; color?: string | null }): Promise<UserDeck | null>;
+  updateDeck(id: string, patch: { name?: string; notes?: string; color?: string | null; archived?: boolean }): Promise<boolean>;
+  deleteDeck(id: string): Promise<boolean>;
+  /** Add/set deck lines. `label` names the card in the failure toast. */
+  deckCards(id: string, mode: 'add' | 'set', items: UserDeckCard[], label?: string): Promise<UserDeck | null>;
 
   // ---- ui ----
   setFilters(patch: Partial<Filters>): void;
@@ -166,7 +179,7 @@ function indexCatalog(c: Catalog): Pick<AppStore, 'catalog_version' | 'sets' | '
   return { catalog_version: c.catalog_version, sets: c.sets, cardsById, cardIds, products: c.products, decks: c.decks };
 }
 
-function indexState(s: State): Pick<AppStore, 'seq' | 'catalog_version' | 'inventory' | 'prices' | 'pricesFetchedAt' | 'fx' | 'tips' | 'devices' | 'purchases' | 'settings' | 'jobs' | 'server'> {
+function indexState(s: State): Pick<AppStore, 'seq' | 'catalog_version' | 'inventory' | 'prices' | 'pricesFetchedAt' | 'fx' | 'tips' | 'devices' | 'purchases' | 'user_decks' | 'settings' | 'jobs' | 'server'> {
   const inventory = new Map<string, InventoryRow>();
   for (const r of s.inventory) inventory.set(invKey(r.card_id, r.finish), r);
   const prices = new Map<string, Price>();
@@ -187,6 +200,7 @@ function indexState(s: State): Pick<AppStore, 'seq' | 'catalog_version' | 'inven
     tips,
     devices: s.devices,
     purchases: s.purchases,
+    user_decks: s.user_decks ?? [],
     settings: s.settings,
     jobs: s.jobs,
     server: s.server,
@@ -296,6 +310,14 @@ export const useStore = create<AppStore>()((set, get) => {
         set({ settings: { ...s.settings, ...p } });
         break;
       }
+      case 'deck': {
+        // the payload carries the full post-state, so local and remote changes apply identically — no refetch
+        const p = change.payload as UserDeckPayload;
+        const rest = s.user_decks.filter((d) => d.id !== p.deck_id);
+        set({ user_decks: p.deck ? [...rest, p.deck] : rest });
+        if (remote && change.device && p.lines?.length) pulseCards([...new Set(p.lines.map((l) => l.card_id))], change.device.color);
+        break;
+      }
       case 'catalog':
         scheduleCatalogRefetch();
         scheduleStateRefetch();
@@ -340,6 +362,7 @@ export const useStore = create<AppStore>()((set, get) => {
     devices: [],
     presence: [],
     purchases: [],
+    user_decks: [],
     settings: DEFAULT_SETTINGS,
     jobs: [],
     jobLive: {},
@@ -532,6 +555,13 @@ export const useStore = create<AppStore>()((set, get) => {
     async undo(seq) {
       try {
         const r = await api.undo(seq, newOpId());
+        if (r.change.kind === 'deck') {
+          const p = r.change.payload as UserDeckPayload;
+          get().ingestChange(r.change);
+          const n = p.lines?.length ?? 0;
+          get().toast({ kind: 'success', text: `Undone in “${p.name}” (${n} card${n === 1 ? '' : 's'} restored)` });
+          return true;
+        }
         const p = r.change.payload as InventoryPayload;
         get().applyLines(p.lines, r.change.ts, r.change.device?.id ?? null);
         get().ingestChange(r.change);
@@ -656,6 +686,54 @@ export const useStore = create<AppStore>()((set, get) => {
       });
       get().announce(`CSV imported, ${rows} rows changed`);
       return true;
+    },
+
+    // ---------- decks ----------
+    async createDeck(name, patch = {}) {
+      try {
+        const r = await api.createDeck(name, newOpId(), patch);
+        if (r.change) get().ingestChange(r.change);
+        get().announce(`Deck ${name} created`);
+        return r.deck;
+      } catch (e) {
+        get().toast({ kind: 'error', text: `Couldn’t create the deck: ${errorMessage(e)}`, ttl: 0 });
+        return null;
+      }
+    },
+
+    async updateDeck(id, patch) {
+      try {
+        const r = await api.updateDeck(id, patch, newOpId());
+        if (r.change) get().ingestChange(r.change);
+        return true;
+      } catch (e) {
+        get().toast({ kind: 'error', text: `Couldn’t save the deck: ${errorMessage(e)}`, ttl: 0 });
+        return false;
+      }
+    },
+
+    async deleteDeck(id) {
+      const name = get().user_decks.find((d) => d.id === id)?.name ?? 'deck';
+      try {
+        const r = await api.deleteDeck(id, newOpId());
+        if (r.change) get().ingestChange(r.change);
+        get().toast({ kind: 'success', text: `Deleted “${name}”` });
+        return true;
+      } catch (e) {
+        get().toast({ kind: 'error', text: `Couldn’t delete “${name}”: ${errorMessage(e)}`, ttl: 0 });
+        return false;
+      }
+    },
+
+    async deckCards(id, mode, items, label) {
+      try {
+        const r = await api.deckCards(id, mode, items, newOpId());
+        if (r.change) get().ingestChange(r.change);
+        return r.deck;
+      } catch (e) {
+        get().toast({ kind: 'error', text: `Couldn’t update ${label ?? 'the deck'}: ${errorMessage(e)}`, ttl: 0 });
+        return null;
+      }
     },
 
     // ---------- ui ----------

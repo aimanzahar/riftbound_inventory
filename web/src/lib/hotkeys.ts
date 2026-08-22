@@ -27,7 +27,7 @@ function modalOpen(): boolean {
   return Boolean(document.querySelector('dialog[open]'));
 }
 
-const CHORD_PAGES: Record<string, Page> = { c: 'collection', p: 'products', d: 'meta', m: 'meta', a: 'activity', s: 'settings', k: 'pack' };
+const CHORD_PAGES: Record<string, Page> = { c: 'collection', p: 'products', d: 'meta', m: 'meta', b: 'decks', a: 'activity', s: 'settings', k: 'pack' };
 
 /** Global keyboard shortcuts. Returns an uninstall function. */
 export function installHotkeys(h: HotkeyHandlers): () => void {
@@ -104,6 +104,7 @@ export const SHORTCUTS: Array<{ keys: string[]; label: string }> = [
   { keys: ['g', 'c'], label: 'Go to Collection' },
   { keys: ['g', 'p'], label: 'Go to Products' },
   { keys: ['g', 'd'], label: 'Go to Meta decks' },
+  { keys: ['g', 'b'], label: 'Go to My decks' },
   { keys: ['g', 'a'], label: 'Go to Activity' },
   { keys: ['g', 's'], label: 'Go to Settings' },
   { keys: ['?'], label: 'This help' },

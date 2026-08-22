@@ -11,6 +11,7 @@ import { CardImage } from './CardImage.tsx';
 import { DomainPips } from './DomainPips.tsx';
 import { PriceCell } from './PriceCell.tsx';
 import { QtyStepper } from './QtyStepper.tsx';
+import { DeckChips } from '../decks/DeckChips.tsx';
 import { RARITY_COLORS } from './CardTile.tsx';
 
 export interface CardRowProps {
@@ -143,6 +144,15 @@ function CardRowInner({ cardId, index, tabIndex, onFocusTile, style }: CardRowPr
             · {card.type}
             {card.energy !== null ? ` · ${card.energy}⚡` : ''}
           </span>
+          <DeckChips
+            card={card}
+            max={1}
+            className="hidden sm:flex"
+            onNavigate={() => {
+              clearHover();
+              hide(cardId);
+            }}
+          />
         </div>
       </div>
       <PriceCell cardId={cardId} size="sm" className="hidden w-[88px] shrink-0 items-end text-right sm:flex" />

@@ -21,7 +21,7 @@ export function TopBar() {
   const route = useRoute();
   const isCollection = route.page === 'collection';
   return (
-    <header className="shrink-0 border-b border-border bg-bg/85 backdrop-blur">
+    <header className="relative z-30 shrink-0 border-b border-border bg-bg/85 backdrop-blur">
       {/* row 1 (hidden on lg where the rail carries the brand) */}
       <div className="flex h-12 items-center gap-3 px-3 sm:px-4 lg:hidden">
         <div className="flex items-center gap-2 lg:hidden">

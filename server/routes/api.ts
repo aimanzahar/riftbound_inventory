@@ -7,13 +7,14 @@ import type { Sse } from '../http/sse.ts';
 import type { Scheduler } from '../scheduler.ts';
 import { buildCatalog } from '../services/catalog.ts';
 import { buildState, readSettings } from '../services/state.ts';
-import { listChanges, maxSeq, resolveDevice, insertChange } from '../services/changes.ts';
+import { getChange, listChanges, maxSeq, resolveDevice, insertChange } from '../services/changes.ts';
 import { applyInventory, normalizeCardId, undoChange, validateOpId } from '../services/inventory.ts';
 import { buyProduct, previewPurchase } from '../services/purchase.ts';
+import { applyDeckCards, createDeck, deleteDeck, listUserDecks, updateDeck, undoDeckChange } from '../services/decks.ts';
 import { exportCsv } from '../services/exportCsv.ts';
 import { JobBusyError, isJobName, jobStatuses, recentRuns } from '../../sync/runner.ts';
 import { PALETTE } from '../../shared/constants.ts';
-import type { InventoryRequest, ServerInfo, SettingsPayload, TipPayload } from '../../shared/types.ts';
+import type { InventoryRequest, ServerInfo, SettingsPayload, TipPayload, UserDeckCardsRequest, UserDeckCreateRequest, UserDeckUpdateRequest } from '../../shared/types.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -104,7 +105,9 @@ export function createApi(d: ApiDeps): Router {
     const body = await ctx.json<{ op_id: string }>();
     const seq = Number(ctx.params.seq);
     if (!Number.isInteger(seq)) throw new HttpError(400, 'VALIDATION', 'bad seq');
-    const res = undoChange(db, seq, body.op_id, resolveDevice(db, ctx.deviceId));
+    const device = resolveDevice(db, ctx.deviceId);
+    // deck changes carry their own inverse (prev_qty per line); everything else goes through the inventory path
+    const res = getChange(db, seq)?.kind === 'deck' ? undoDeckChange(db, seq, body.op_id, device) : undoChange(db, seq, body.op_id, device);
     sse.drain();
     return { status: 200, body: res };
   });
@@ -188,6 +191,36 @@ export function createApi(d: ApiDeps): Router {
     });
     sse.drain();
     return { status: 200, body: { settings } };
+  });
+
+  r.get('/api/decks', () => ({ status: 200, body: { decks: listUserDecks(db) } }));
+
+  r.post('/api/decks', async (ctx) => {
+    const body = await ctx.json<UserDeckCreateRequest>();
+    const res = createDeck(db, body, resolveDevice(db, ctx.deviceId));
+    sse.drain();
+    return { status: 200, body: res };
+  });
+
+  r.put('/api/decks/:id', async (ctx) => {
+    const body = await ctx.json<UserDeckUpdateRequest>();
+    const res = updateDeck(db, ctx.params.id, body, resolveDevice(db, ctx.deviceId));
+    sse.drain();
+    return { status: 200, body: res };
+  });
+
+  r.delete('/api/decks/:id', async (ctx) => {
+    const body = await ctx.json<{ op_id: string }>();
+    const res = deleteDeck(db, ctx.params.id, body.op_id, resolveDevice(db, ctx.deviceId));
+    sse.drain();
+    return { status: 200, body: res };
+  });
+
+  r.post('/api/decks/:id/cards', async (ctx) => {
+    const body = await ctx.json<UserDeckCardsRequest>();
+    const res = applyDeckCards(db, ctx.params.id, { ...body, device: resolveDevice(db, ctx.deviceId) });
+    sse.drain();
+    return { status: 200, body: res };
   });
 
   r.get('/api/jobs', () => {

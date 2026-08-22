@@ -33,7 +33,7 @@ export const DOMAIN_ORDER = ['fury', 'calm', 'mind', 'body', 'chaos', 'order', '
 export const RARITY_ORDER = ['Common', 'Uncommon', 'Rare', 'Epic', 'Showcase', 'Promo'];
 export const TYPE_ORDER = ['Legend', 'Unit', 'Spell', 'Gear', 'Rune', 'Battlefield', 'Token'];
 
-export const CHANGE_KINDS = ['inventory', 'tip', 'prices', 'fx', 'tips', 'catalog', 'settings'] as const;
+export const CHANGE_KINDS = ['inventory', 'tip', 'prices', 'fx', 'tips', 'catalog', 'settings', 'deck'] as const;
 export const INVENTORY_REASONS = ['manual', 'pack', 'product', 'csv', 'note', 'undo'] as const;
 
 export const JOB_NAMES = ['cards', 'products', 'images', 'fx', 'prices', 'meta', 'backup', 'tips'] as const;

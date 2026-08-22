@@ -14,6 +14,7 @@ import { QtyStepper } from './QtyStepper.tsx';
 import { TipEditor } from './TipEditor.tsx';
 import { Sparkline } from './Sparkline.tsx';
 import { UsageList } from './UsageList.tsx';
+import { MyDecksList } from '../decks/MyDecksList.tsx';
 import { CardHistory } from './CardHistory.tsx';
 import { RARITY_COLORS } from './CardTile.tsx';
 import { Button } from '../ui/Button.tsx';
@@ -81,6 +82,9 @@ export function CardDrawer({ cardId, visibleIds, overlay }: CardDrawerProps) {
           </Section>
           <Section title="Price">
             <PricePanel card={card} />
+          </Section>
+          <Section title="In my decks">
+            <MyDecksList card={card} />
           </Section>
           <Section title="Used in meta decks">
             <UsageList card={card} />

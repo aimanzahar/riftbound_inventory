@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ArrowLeft, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, Layers } from 'lucide-react';
 import type { Deck, DeckSection, DeckUnresolved } from '../../../../shared/types.ts';
 import { useStore } from '../../store/store.ts';
 import { canonicalOf } from '../../store/selectors.ts';
@@ -11,6 +11,8 @@ import { DomainPips } from '../cards/DomainPips.tsx';
 import { usePreview } from '../cards/previewStore.ts';
 import { Badge } from '../ui/Badge.tsx';
 import { Button } from '../ui/Button.tsx';
+import { ExportDeckDialog } from '../decks/DeckDialogs.tsx';
+import { openDeck } from '../decks/DeckChips.tsx';
 import { DeckCompletion } from './DeckCompletion.tsx';
 import { PlacementBadge, SourceLink } from './DeckCard.tsx';
 import { useCardHover } from './useCardHover.ts';
@@ -32,6 +34,7 @@ export function DeckDetail({ deck, onBack, backClassName, focusCanon, className 
   const info = useDeckCompletion(deck);
   const fx = useStore((s) => s.fx);
   const [missingOnly, setMissingOnly] = useState(false);
+  const [exportOpen, setExportOpen] = useState(false);
 
   const bySection = useMemo(() => {
     const m = new Map<DeckSection, DeckLine[]>();
@@ -125,6 +128,16 @@ export function DeckDetail({ deck, onBack, backClassName, focusCanon, className 
             <span className={cx('tabular text-[11px]', missingOnly ? 'text-accent-strong/70' : 'text-faint')}>{incomplete}</span>
           </button>
           <SourceLink url={deck.source_url} className="pointer-coarse:h-9" />
+          <button
+            type="button"
+            onClick={() => setExportOpen(true)}
+            title="Copy this list into a deck of your own"
+            className="inline-flex h-7 shrink-0 items-center gap-1.5 rounded-full border border-border bg-surface-2 px-2.5 text-xs font-medium text-muted transition-colors hover:border-border-strong hover:text-fg pointer-coarse:h-9"
+          >
+            <Layers className="size-3.5" aria-hidden />
+            Export deck
+          </button>
+          <ExportDeckDialog deck={deck} open={exportOpen} onClose={() => setExportOpen(false)} onCreated={(d) => openDeck(d.id)} />
         </div>
       </header>
 

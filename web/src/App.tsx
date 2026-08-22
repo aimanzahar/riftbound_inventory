@@ -16,6 +16,7 @@ import { useFilterSheet } from './components/filters/FilterSheet.tsx';
 import { Button } from './components/ui/Button.tsx';
 import { CollectionPage } from './pages/CollectionPage.tsx';
 import { ProductsPage } from './pages/ProductsPage.tsx';
+import { DecksPage } from './pages/DecksPage.tsx';
 import { MetaPage } from './pages/MetaPage.tsx';
 import { PackPage } from './pages/PackPage.tsx';
 import { ActivityPage } from './pages/ActivityPage.tsx';
@@ -105,6 +106,9 @@ export function App() {
       break;
     case 'meta':
       page = <MetaPage />;
+      break;
+    case 'decks':
+      page = <DecksPage />;
       break;
     case 'pack':
       page = <PackPage />;

@@ -2,6 +2,7 @@ import type { Db } from '../db/open.ts';
 import { all, getSetting, one } from '../db/open.ts';
 import type { Device, Fx, InventoryRow, JobStatus, Price, ServerInfo, Settings, State, Tip } from '../../shared/types.ts';
 import { listPurchases, maxSeq } from './changes.ts';
+import { listUserDecks } from './decks.ts';
 
 export function readSettings(db: Db): Settings {
   return {
@@ -52,6 +53,7 @@ export function buildState(db: Db, extras: { jobs: JobStatus[]; server: ServerIn
       tips,
       devices,
       purchases: listPurchases(db, 100),
+      user_decks: listUserDecks(db),
       settings: readSettings(db),
       jobs: extras.jobs,
       server: extras.server,

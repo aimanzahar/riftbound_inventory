@@ -11,6 +11,7 @@ import { CardImage } from './CardImage.tsx';
 import { DomainPips } from './DomainPips.tsx';
 import { PriceCell } from './PriceCell.tsx';
 import { QtyStepper } from './QtyStepper.tsx';
+import { DeckChips } from '../decks/DeckChips.tsx';
 
 export const RARITY_COLORS: Record<string, string> = {
   Common: '#9aa4b8',
@@ -40,6 +41,7 @@ function CardTileInner({ cardId, index, tabIndex, onFocusTile, style, dimWhenZer
   const foilSticky = useStore((s) => s.ui.foilSticky);
   const pulse = useStore((s) => s.pulses.get(cardId));
   const usage = useCardUsage(card);
+  const hasDecks = useStore((s) => s.user_decks.length > 0);
   const show = usePreview((s) => s.show);
   const hide = usePreview((s) => s.hide);
   const openSheet = usePreview((s) => s.openSheet);
@@ -187,6 +189,20 @@ function CardTileInner({ cardId, index, tabIndex, onFocusTile, style, dimWhenZer
             </span>
           )}
         </div>
+        {/* fixed height so every tile in the grid stays the same height — see TILE_CHIP_ROW in CardGrid */}
+        {hasDecks && (
+          <div className="h-[18px]">
+            {/* one named chip only: a grid tile is ~156 px wide and two names truncate to “J…” */}
+            <DeckChips
+              card={card}
+              max={1}
+              onNavigate={() => {
+                clearHover();
+                hide(cardId);
+              }}
+            />
+          </div>
+        )}
       </div>
 
       <div className="mt-auto flex flex-col gap-1.5">

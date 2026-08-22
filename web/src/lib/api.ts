@@ -10,6 +10,9 @@ import type {
   Settings,
   State,
   Tip,
+  UserDeck,
+  UserDeckCard,
+  UserDeckResponse,
 } from '../../../shared/types.ts';
 import type { JobName } from '../../../shared/constants.ts';
 import { getDeviceId } from './identity.ts';
@@ -170,6 +173,17 @@ export const api = {
   putDevice: (id: string, name: string, color: string) => request<{ device: Device }>('PUT', `/api/devices/${enc(id)}`, { name, color }),
 
   putSettings: (patch: Partial<Settings>, op_id: string) => request<{ settings: Settings }>('PUT', '/api/settings', { ...patch, op_id }),
+
+  decks: (opts?: RequestOpts) => request<{ decks: UserDeck[] }>('GET', '/api/decks', undefined, opts),
+
+  createDeck: (name: string, op_id: string, patch: { notes?: string; color?: string | null } = {}) => request<UserDeckResponse>('POST', '/api/decks', { op_id, name, ...patch }),
+
+  updateDeck: (id: string, patch: { name?: string; notes?: string; color?: string | null; archived?: boolean }, op_id: string) =>
+    request<UserDeckResponse>('PUT', `/api/decks/${enc(id)}`, { op_id, ...patch }),
+
+  deleteDeck: (id: string, op_id: string) => request<UserDeckResponse>('DELETE', `/api/decks/${enc(id)}`, { op_id }),
+
+  deckCards: (id: string, mode: 'add' | 'set', items: UserDeckCard[], op_id: string) => request<UserDeckResponse>('POST', `/api/decks/${enc(id)}/cards`, { op_id, mode, items }),
 
   jobs: (opts?: RequestOpts) => request<JobsResponse>('GET', '/api/jobs', undefined, opts),
 

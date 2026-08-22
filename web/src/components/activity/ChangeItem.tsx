@@ -1,6 +1,6 @@
 import { memo, useCallback, useEffect, useId, useRef, useState, type FocusEvent, type PointerEvent as ReactPointerEvent } from 'react';
 import { ChevronRight, CornerUpLeft, Cpu, Undo2 } from 'lucide-react';
-import type { Change, Finish, InventoryPayload, SettingsPayload, TipPayload } from '../../../../shared/types.ts';
+import type { Change, Finish, InventoryPayload, SettingsPayload, TipPayload, UserDeckPayload } from '../../../../shared/types.ts';
 import { changeSummary } from '../../../../shared/summarize.ts';
 import { useStore } from '../../store/store.ts';
 import { useCard } from '../../store/selectors.ts';
@@ -18,7 +18,7 @@ import { Button } from '../ui/Button.tsx';
 // kind badge
 // ---------------------------------------------------------------------------
 
-export type KindLabel = 'inventory' | 'product' | 'pack' | 'csv' | 'note' | 'undo' | 'tip' | 'tips' | 'prices' | 'fx' | 'catalog' | 'settings';
+export type KindLabel = 'inventory' | 'product' | 'pack' | 'csv' | 'note' | 'undo' | 'tip' | 'tips' | 'prices' | 'fx' | 'catalog' | 'settings' | 'deck';
 
 /** Badge label for a change: inventory rows are split by reason, everything else by kind. */
 export function kindOf(c: Change): KindLabel {
@@ -54,6 +54,7 @@ const KIND_TONE: Record<KindLabel, BadgeTone> = {
   fx: 'outline',
   catalog: 'outline',
   settings: 'outline',
+  deck: 'accent',
 };
 
 const KIND_TITLE: Record<KindLabel, string> = {
@@ -69,6 +70,7 @@ const KIND_TITLE: Record<KindLabel, string> = {
   fx: 'Exchange-rate sync',
   catalog: 'Catalog sync',
   settings: 'Settings changed',
+  deck: 'Deck edited',
 };
 
 // ---------------------------------------------------------------------------
@@ -89,6 +91,7 @@ export interface FeedLine {
 export function linesOf(c: Change): FeedLine[] {
   if (c.kind === 'inventory') return (c.payload as InventoryPayload).lines;
   if (c.kind === 'tip') return [{ card_id: (c.payload as TipPayload).card_id }];
+  if (c.kind === 'deck') return (c.payload as UserDeckPayload).lines ?? [];
   return [];
 }
 
@@ -268,7 +271,8 @@ function ChangeItemInner({ change: c, now, mine, busy, highlighted, onUndo, onJu
   const body = text.startsWith(`${who} `) ? text.slice(who.length + 1) : text;
   const kind = kindOf(c);
   const lines = linesOf(c);
-  const canUndo = c.kind === 'inventory' && !c.undone;
+  // deck card edits carry prev_qty per line, so they invert the same way inventory rows do
+  const canUndo = !c.undone && (c.kind === 'inventory' || (c.kind === 'deck' && c.reason === 'cards'));
 
   return (
     <li
