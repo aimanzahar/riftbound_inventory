@@ -166,7 +166,7 @@ Schema migrations snapshot the database before they run, so an upgrade that goes
 
 ## Sync jobs
 
-Jobs run automatically inside the server (fx/prices/images daily, meta/cards weekly, backup daily) and can be run by hand:
+Jobs run automatically inside the server (fx/prices/images/meta daily, cards weekly, backup daily) and can be run by hand:
 
 ```bash
 npm run sync:cards     # Riot card gallery → cards/sets (+ TCGplayer ids via DotGG)

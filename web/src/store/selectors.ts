@@ -263,6 +263,17 @@ export function priceIsStale(fetchedAt: string | null | undefined): boolean {
   return hoursSince(fetchedAt) > PRICE_STALE_HOURS;
 }
 
+/**
+ * Meta decks whose last SUCCESSFUL sync is older than this are shown amber.
+ * The job runs on a rolling 24 h and riftools publishes 1-3 days behind the event, so 24 h here would
+ * go amber every day just before the run; 48 h means a day was actually missed.
+ */
+export const META_STALE_HOURS = 48;
+
+export function metaIsStale(lastSuccessAt: string | null | undefined): boolean {
+  return hoursSince(lastSuccessAt) > META_STALE_HOURS;
+}
+
 export function sortedOptions(values: Iterable<string>, order: string[]): string[] {
   const arr = [...values];
   return arr.sort((a, b) => {

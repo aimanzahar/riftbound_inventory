@@ -285,6 +285,8 @@ export interface JobStatus {
   interval_hours: number | null;
   running: boolean;
   next_due_at: string | null;
+  /** finish time of the most recent ok|partial run — the real "data as of", unlike `last` which may be a failure */
+  last_success_at: string | null;
   last: {
     status: 'running' | 'ok' | 'partial' | 'error';
     trigger: string;

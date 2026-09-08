@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { ArrowLeft, RefreshCw, Search, SearchX, Swords, X } from 'lucide-react';
 import { useStore } from '../store/store.ts';
-import { canonicalOf, useCard } from '../store/selectors.ts';
+import { META_STALE_HOURS, canonicalOf, metaIsStale, useCard } from '../store/selectors.ts';
 import { closeCard, navigate, useRoute } from '../lib/router.ts';
 import { cx, fmtInt, relTime } from '../lib/format.ts';
 import { Chip } from '../components/filters/FilterBar.tsx';
@@ -92,7 +92,7 @@ export function MetaPage() {
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
-      <Toolbar query={query} model={model} update={update} clearFilters={clearFilters} filterCount={filterCount} metaRefreshedAt={metaJob?.last?.finished_at ?? null} metaRunning={metaJob?.running ?? false} />
+      <Toolbar query={query} model={model} update={update} clearFilters={clearFilters} filterCount={filterCount} metaRefreshedAt={metaJob?.last_success_at ?? null} metaRunning={metaJob?.running ?? false} metaFailed={metaJob?.last?.status === 'error'} />
 
       {focusCard && (
         <div className="flex items-center gap-3 border-b border-accent/30 bg-accent/10 px-4 py-2" role="status">
@@ -195,24 +195,36 @@ export function MetaPage() {
 // toolbar
 // ---------------------------------------------------------------------------
 
+/** How fresh the deck corpus is, and whether that should be shown as a warning. */
+function metaFreshness(lastSuccessAt: string | null, running: boolean, failed: boolean): { text: string; title: string; warn: boolean } {
+  if (running) return { text: 'refreshing…', title: 'The meta sync job is running now', warn: false };
+  const text = lastSuccessAt ? `refreshed ${relTime(lastSuccessAt)}` : 'never refreshed';
+  if (failed) return { text, title: 'The last meta sync failed — this is when it last succeeded. Settings → Jobs has the error.', warn: true };
+  if (!lastSuccessAt) return { text, title: 'The meta sync job has never finished successfully', warn: true };
+  if (metaIsStale(lastSuccessAt)) return { text, title: `No successful meta sync in over ${META_STALE_HOURS} h — these decks may be out of date`, warn: true };
+  return { text, title: 'Last successful meta sync', warn: false };
+}
+
 interface ToolbarProps {
   query: MetaQuery;
   model: MetaModel;
   update: (patch: Partial<MetaQuery>, push?: boolean) => void;
   clearFilters: () => void;
   filterCount: number;
+  /** last SUCCESSFUL meta sync — not the last attempt, so a failing job can't masquerade as fresh */
   metaRefreshedAt: string | null;
   metaRunning: boolean;
+  metaFailed: boolean;
 }
 
-function Toolbar({ query, model, update, clearFilters, filterCount, metaRefreshedAt, metaRunning }: ToolbarProps) {
+function Toolbar({ query, model, update, clearFilters, filterCount, metaRefreshedAt, metaRunning, metaFailed }: ToolbarProps) {
   const toggle = (listv: string[], v: string) => (listv.includes(v) ? listv.filter((x) => x !== v) : [...listv, v]);
   const summary = [
     `${fmtInt(model.archetypes.length)} archetype${model.archetypes.length === 1 ? '' : 's'}`,
     `${fmtInt(model.shownTotal)}${model.narrowed ? ` of ${fmtInt(model.windowTotal)}` : ''} deck${(model.narrowed ? model.windowTotal : model.shownTotal) === 1 ? '' : 's'}`,
     `${fmtInt(model.events)} event${model.events === 1 ? '' : 's'}`,
-    metaRunning ? 'refreshing…' : metaRefreshedAt ? `refreshed ${relTime(metaRefreshedAt)}` : null,
-  ].filter(Boolean);
+  ];
+  const freshness = metaFreshness(metaRefreshedAt, metaRunning, metaFailed);
   return (
     <div className="flex flex-col gap-2 border-b border-border bg-bg/80 px-4 py-2 backdrop-blur">
       <div className="flex flex-wrap items-center gap-2">
@@ -248,7 +260,10 @@ function Toolbar({ query, model, update, clearFilters, filterCount, metaRefreshe
           </button>
         )}
         <span className="tabular ml-auto hidden text-[11.5px] text-muted sm:inline" aria-live="polite">
-          {summary.join(' · ')}
+          {summary.join(' · ')} ·{' '}
+          <span className={cx(freshness.warn && 'font-medium text-warning')} title={freshness.title}>
+            {freshness.text}
+          </span>
         </span>
       </div>
       <div className="no-scrollbar flex items-center gap-x-5 overflow-x-auto py-0.5">
@@ -270,7 +285,17 @@ function Toolbar({ query, model, update, clearFilters, filterCount, metaRefreshe
             ))}
           </Group>
         )}
-        <span className="tabular ml-auto shrink-0 text-[11px] text-muted sm:hidden">{summary.slice(0, 2).join(' · ')}</span>
+        <span className="tabular ml-auto shrink-0 text-[11px] text-muted sm:hidden">
+          {summary.slice(0, 2).join(' · ')}
+          {freshness.warn && (
+            <>
+              {' · '}
+              <span className="font-medium text-warning" title={freshness.title}>
+                {freshness.text}
+              </span>
+            </>
+          )}
+        </span>
       </div>
     </div>
   );

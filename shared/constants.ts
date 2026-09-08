@@ -45,7 +45,7 @@ export const JOB_INTERVAL_HOURS: Record<JobName, number | null> = {
   images: 24,
   fx: 24,
   prices: 24,
-  meta: 168,
+  meta: 24,
   backup: 24,
   tips: null,
 };

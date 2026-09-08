@@ -1,4 +1,4 @@
-// riftools.app — tournament results + decklists (undocumented JSON; ≤2 req/s, weekly use).
+// riftools.app — tournament results + decklists (undocumented JSON; ≤2 req/s, daily use).
 //   /api/tournaments → items[]; /api/tournament?url=… → rows[]; /api/deck?url=… → cards[]
 import type { JobCtx } from '../types.ts';
 import type { MetaDeckCardInput, MetaDeckInput } from './types.ts';

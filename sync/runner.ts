@@ -128,11 +128,13 @@ export function nextDueAt(db: Db, name: JobName): string | null {
 export function jobStatuses(db: Db): JobStatus[] {
   return JOB_NAMES.map((name) => {
     const last = lastRun(db, name);
+    const good = lastGoodRun(db, name);
     return {
       name,
       interval_hours: JOB_INTERVAL_HOURS[name],
       running: inMemoryRunning.has(name) || last?.status === 'running',
       next_due_at: nextDueAt(db, name),
+      last_success_at: good ? (good.finished_at ?? good.started_at) : null,
       last: last
         ? { status: last.status, trigger: last.trigger, started_at: last.started_at, finished_at: last.finished_at, items_ok: Number(last.items_ok), items_failed: Number(last.items_failed), message: last.message }
         : null,

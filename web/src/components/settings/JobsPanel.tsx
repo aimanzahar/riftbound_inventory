@@ -13,7 +13,7 @@ const LABEL: Record<string, { title: string; desc: string }> = {
   images: { title: 'Card images', desc: 'Mirror images locally. Daily (no-op when complete).' },
   fx: { title: 'FX rate', desc: 'USD → MYR. Daily.' },
   prices: { title: 'Prices', desc: 'TCGplayer market via tcgcsv. Daily.' },
-  meta: { title: 'Meta decks', desc: 'Tournament lists (riftools). Weekly.' },
+  meta: { title: 'Meta decks', desc: 'Tournament lists (riftools). Daily.' },
   backup: { title: 'Backup', desc: 'SQLite snapshot to data/backups. Daily.' },
   tips: { title: 'Card tips (Codex)', desc: 'Generate missing tips with Codex CLI. Manual.' },
 };
