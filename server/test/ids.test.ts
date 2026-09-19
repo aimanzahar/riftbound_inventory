@@ -57,12 +57,22 @@ describe('shared/ids normalizeCommunityId', () => {
     assert.equal(normalizeCommunityId('unl-t1'), 'UNL-T01');
     assert.equal(normalizeCommunityId('OGN-001'), 'OGN-001');
   });
-  it('returns null for promos and unparseable input', () => {
-    assert.equal(normalizeCommunityId('OGN-066-P'), null);
-    assert.equal(normalizeCommunityId('sfd-116-p'), null);
+  it('preserves distinct promo printings and normalizes collector codes', () => {
+    for (const [raw, expected] of [
+      ['OGN-066-P', 'OGN-066-P'], ['sfd-116-p', 'SFD-116-P'], ['VEN-R01B-P', 'VEN-R01b-P'],
+      ['SFD-139-P2', 'SFD-139-P2'], ['unl-058-p-champion', 'UNL-058-P-CHAMPION'],
+      ['SGN - 001/003 - P', 'SGN-001-P'], ['OGN-263-a', 'OGN-263a'], ['OGN-P', 'OGN-P'],
+      ['OGN-279/298-OVERSIZED', 'OGN-279-OVERSIZED'], ['OGN-043/298', 'OGN-043'],
+    ]) {
+      assert.equal(normalizeCommunityId(raw), expected);
+      assert.equal(normalizeCommunityId(expected), expected);
+    }
+  });
+  it('rejects unparseable and unsafe input', () => {
     assert.equal(normalizeCommunityId('Jinx, Loose Cannon'), null);
     assert.equal(normalizeCommunityId(''), null);
-    assert.equal(normalizeCommunityId('OGN-043/298'), null);
+    assert.equal(normalizeCommunityId('../OGN-043'), null);
+    assert.equal(normalizeCommunityId('OGN-043/../../secret'), null);
   });
 });
 

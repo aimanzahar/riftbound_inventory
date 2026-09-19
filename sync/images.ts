@@ -19,6 +19,8 @@ interface CardImg {
 
 /** Sanity image params: portrait → width, landscape → height (keeps the short side at the requested size). */
 export function riotVariantUrl(imageUrl: string, orientation: string, kind: 'full' | 'thumb'): string {
+  const host = new URL(imageUrl).hostname;
+  if (host !== 'cmsassets.rgpub.io' && host !== 'cdn.sanity.io') return imageUrl;
   const sep = imageUrl.includes('?') ? '&' : '?';
   const size = kind === 'full' ? 744 : 300;
   const q = kind === 'full' ? 80 : 75;

@@ -8,7 +8,7 @@ import { Badge } from '../ui/Badge.tsx';
 import { Button } from '../ui/Button.tsx';
 
 const LABEL: Record<string, { title: string; desc: string }> = {
-  cards: { title: 'Card catalog', desc: 'Riot gallery + DotGG ids. Weekly.' },
+  cards: { title: 'Card catalog', desc: 'Cards, alternate art and promos from Riot + DotGG. Daily, with catch-up on startup.' },
   products: { title: 'Products', desc: 'Precon contents from seed/products.json.' },
   images: { title: 'Card images', desc: 'Mirror images locally. Daily (no-op when complete).' },
   fx: { title: 'FX rate', desc: 'USD → MYR. Daily.' },

@@ -31,20 +31,28 @@ export function fromRiotId(riotId: string): { id: string; set: string; number: s
   return { id: `${set}-${number}${suffix}`, set, number: `${number}${suffix}`, number_int, suffix, kind };
 }
 
-/** Normalise community ids ('OGN-303-STAR', 'ogn-303*', 'OGN-066A', 'OGN-066-P') to ours; returns null for promos (-P). */
-export function normalizeCommunityId(raw: string): string | null {
-  let s = raw.trim().toUpperCase();
-  if (/-P$/.test(s)) return null;
-  s = s.replace(/-STAR$/, 's').replace(/\*$/, 's');
-  const m = s.match(/^([A-Z0-9]+)-(T|R|SP)?(\d+)([A-Z]?)$/i);
+/** Parse a printing without discarding promo qualifiers or inventing collector numbers. */
+export function communityCardParts(raw: string): { id: string; set: string; number: string; number_int: number; suffix: string } | null {
+  const s = raw.trim().toUpperCase().replace(/\s+/g, '')
+    .replace(/-STAR(?=$|\/|-P)/g, 'S').replace(/\*(?=$|\/|-P)/g, 'S')
+    .replace(/-([ABS])(?=$|\/|-P)/g, '$1').replace(/\/\d+(?=$|-)/, '');
+  const unnumbered = s.match(/^([A-Z0-9]+)-(P\d*(?:-[A-Z][A-Z0-9]*)*)$/);
+  if (unnumbered) return { id: s, set: unnumbered[1], number: unnumbered[2], number_int: 0, suffix: '' };
+  const m = s.match(/^([A-Z0-9]+)-(T|R|SP)?(\d+)([A-Z]?)((?:-[A-Z][A-Z0-9]*)*)$/);
   if (!m) return null;
   const set = m[1];
   const prefix = (m[2] ?? '').toUpperCase();
   const n = Number(m[3]);
+  if (!Number.isSafeInteger(n)) return null;
   const suffix = (m[4] ?? '').toLowerCase();
-  if (prefix === 'SP') return `${set}-SP${n}${suffix}`;
-  if (prefix) return `${set}-${prefix}${String(n).padStart(2, '0')}${suffix}`;
-  return `${set}-${pad3(n)}${suffix}`;
+  const base = prefix === 'SP' ? `SP${n}` : prefix ? `${prefix}${String(n).padStart(2, '0')}` : pad3(n);
+  const number = `${base}${suffix}${m[5]}`;
+  return { id: `${set}-${number}`, set, number, number_int: n, suffix };
+}
+
+/** Normalise collector codes, artwork suffixes, signatures, and distinct promo printings. */
+export function normalizeCommunityId(raw: string): string | null {
+  return communityCardParts(raw)?.id ?? null;
 }
 
 export interface PackEntry {

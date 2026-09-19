@@ -35,7 +35,7 @@ export interface Card {
   orientation: 'portrait' | 'landscape';
   image_url: string | null;
   variant_of: string | null;
-  variant_kind: string | null; // alt_art | showcase | signature | overnumbered | reprint | null
+  variant_kind: string | null; // alt_art | showcase | signature | overnumbered | reprint | promo | oversized | null
   has_foil: number;
   has_normal: number;
   tcgplayer_id: number | null;

@@ -81,10 +81,7 @@ export interface ResolveCtx {
 
 /** Same case rule as the server: set/prefix upper, trailing variant letter lower. */
 export function normalizeCardId(raw: string): string {
-  return raw
-    .trim()
-    .toUpperCase()
-    .replace(/(\d)([A-Z])$/, (_m, d: string, suf: string) => d + suf.toLowerCase());
+  return normalizeCommunityId(raw) ?? raw.trim().toUpperCase();
 }
 
 function parseFinish(raw: string): Finish | null {

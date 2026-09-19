@@ -185,7 +185,7 @@ function CardTileInner({ cardId, index, tabIndex, onFocusTile, style, dimWhenZer
           <DomainPips domains={card.domains} size="xs" />
           {card.variant_kind && (
             <span className="ml-auto truncate text-[10px] uppercase tracking-wide text-faint" title={card.variant_kind.replace('_', ' ')}>
-              {card.variant_kind === 'alt_art' ? 'ALT' : card.variant_kind === 'signature' ? 'SIG' : card.variant_kind === 'showcase' ? 'SC' : card.variant_kind === 'overnumbered' ? 'SC' : 'RP'}
+              {card.variant_kind === 'promo' ? 'PROMO' : card.variant_kind === 'oversized' ? 'OS' : card.variant_kind === 'alt_art' ? 'ALT' : card.variant_kind === 'signature' ? 'SIG' : card.variant_kind === 'showcase' ? 'SC' : card.variant_kind === 'overnumbered' ? 'SC' : 'RP'}
             </span>
           )}
         </div>

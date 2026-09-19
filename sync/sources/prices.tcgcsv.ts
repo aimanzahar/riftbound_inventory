@@ -99,7 +99,7 @@ export interface TcgcsvGroupResult {
 
 /**
  * Streams per-group results to `onGroup` so the caller can commit one transaction per group.
- * Mapping: productId → card by (set, Number) when the printed total agrees; else by cards.tcgplayer_id.
+ * Mapping: explicit productId first; collector number only for cards with no assigned market ID.
  */
 export async function fetchTcgcsvPrices(ctx: JobCtx, onGroup: (r: TcgcsvGroupResult) => void): Promise<{ groups: number; failedGroups: number }> {
   const { db, log } = ctx;
@@ -115,7 +115,7 @@ export async function fetchTcgcsvPrices(ctx: JobCtx, onGroup: (r: TcgcsvGroupRes
   const byTcg = new Map<number, string[]>();
   for (const c of cards) {
     const m = c.number.match(/^(T|R|SP)?(\d+)([a-z]?)$/);
-    if (m) byNumber.set(`${c.set_code}|${m[1] ?? ''}|${Number(c.number_int)}|${m[3] ?? ''}`, c.id);
+    if (m && c.tcgplayer_id === null) byNumber.set(`${c.set_code}|${m[1] ?? ''}|${Number(c.number_int)}|${m[3] ?? ''}`, c.id);
     if (c.tcgplayer_id !== null) {
       const k = Number(c.tcgplayer_id);
       const arr = byTcg.get(k);
@@ -141,29 +141,26 @@ export async function fetchTcgcsvPrices(ctx: JobCtx, onGroup: (r: TcgcsvGroupRes
         products.set(Number(p.productId), { name: String(p.name ?? ''), number: num });
         if (!num) result.sealed++;
       }
-      // resolve productId → card ids (number match is authoritative; tcgplayer_id is the fallback)
+      // Promos can share printed numbers with regular cards: market IDs identify the printing.
       const resolved = new Map<number, { ids: string[]; exact: boolean }>();
       const productsMatched = new Set<number>();
       for (const [productId, p] of products) {
-        if (!p.number) continue;
         const parsed = parseTcgNumber(p.number);
-        let ids: string[] = [];
-        let exact = false;
+        let ids: string[] = byTcg.get(productId) ?? [];
+        const exact = ids.length > 0;
         // tokens/runes/specials ('T01', 'R04', 'SP3/006') carry their own numbering → no printed-total check for them
-        if (parsed && (parsed.prefix !== '' || parsed.total === null || set.printed_total === null || parsed.total === set.printed_total)) {
+        if (!exact && parsed && (parsed.prefix !== '' || parsed.total === null || set.printed_total === null || parsed.total === set.printed_total)) {
           const id = byNumber.get(`${set.code}|${parsed.prefix}|${parsed.number_int}|${parsed.suffix}`);
           if (id) {
             ids = [id];
-            exact = true;
           }
         }
-        if (!ids.length) ids = byTcg.get(productId) ?? [];
         if (ids.length) {
           resolved.set(productId, { ids, exact });
           productsMatched.add(productId);
-        } else result.unmatched.push({ productId, name: p.name, number: p.number });
+        } else if (p.number) result.unmatched.push({ productId, name: p.name, number: p.number });
       }
-      // build rows; exact (number) matches override tcgplayer-id matches for the same (card, finish)
+      // Explicit market matches override collector-number fallback matches.
       const rows = new Map<string, { row: PriceRow; exact: boolean }>();
       for (const pr of priceRes.results ?? []) {
         const r = resolved.get(Number(pr.productId));

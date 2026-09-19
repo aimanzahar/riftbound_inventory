@@ -19,4 +19,4 @@ export const JOBS: Record<JobName, JobFn> = {
 
 /** Order used by `sync all` and the startup/scheduler tick. */
 export const ALL_ORDER: JobName[] = ['cards', 'products', 'images', 'fx', 'prices', 'meta'];
-export const SCHEDULE_ORDER: JobName[] = ['fx', 'prices', 'images', 'cards', 'meta', 'backup'];
+export const SCHEDULE_ORDER: JobName[] = ['cards', 'images', 'fx', 'prices', 'meta', 'backup'];

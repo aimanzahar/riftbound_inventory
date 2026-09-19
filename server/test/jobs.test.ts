@@ -117,13 +117,13 @@ test('helpers: variants, tcg numbers, urls, ids', () => {
   );
   assert.deepEqual(m.map((x) => `${x.group.groupId}:${x.set.code}`), ['1:OGN', '2:OGS', '4:SFD']);
 
-  assert.equal(riotVariantUrl('https://x/y.png?accountingTag=RB', 'portrait', 'full'), 'https://x/y.png?accountingTag=RB&fm=webp&w=744&q=80');
-  assert.equal(riotVariantUrl('https://x/y.png', 'landscape', 'thumb'), 'https://x/y.png?fm=webp&h=300&q=75');
+  assert.equal(riotVariantUrl('https://cmsassets.rgpub.io/y.png?accountingTag=RB', 'portrait', 'full'), 'https://cmsassets.rgpub.io/y.png?accountingTag=RB&fm=webp&w=744&q=80');
+  assert.equal(riotVariantUrl('https://cmsassets.rgpub.io/y.png', 'landscape', 'thumb'), 'https://cmsassets.rgpub.io/y.png?fm=webp&h=300&q=75');
   assert.equal(dotggImageUrl('OGN-303s'), 'https://static.dotgg.gg/riftbound/cards/OGN-303-STAR.webp');
   assert.equal(codeToId('OGN-043/298'), 'OGN-043');
   assert.equal(codeToId('ogn-304-star-298'), 'OGN-304s');
   assert.equal(codeToId('UNL-T01'), 'UNL-T01');
-  assert.equal(codeToId('OGN-066-P'), null);
+  assert.equal(codeToId('OGN-066-P'), 'OGN-066-P');
   assert.equal(deckId('riftools', 'x').length, 16);
 });
 
@@ -151,7 +151,7 @@ test('cards job: localjson fixture, idempotent second run', async () => {
   assert.equal(card('UNL-T01').orientation, 'landscape');
   assert.equal(card('UNL-T01').number, 'T01');
   assert.equal(card('UNL-T01').number_int, 1);
-  // join applied (incl. '-STAR' normalisation, '-P' promos ignored)
+  // join applied (incl. '-STAR' normalisation, distinct promo IDs do not overwrite regular cards)
   assert.equal(card('OGN-007').tcgplayer_id, 652777);
   assert.equal(card('SFD-227s').tcgplayer_id, 664913);
   assert.equal(card('SFD-227s').has_normal, 0);

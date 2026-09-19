@@ -19,6 +19,9 @@ export interface SourceCard {
   riot_id: string | null;
   public_code: string | null;
   name: string;
+  /** Gameplay name for grouping printings, without promo labels. */
+  canonical_name?: string;
+  printing_kind?: string | null;
   type: string | null;
   supertype: string | null;
   domains: string[];
@@ -54,6 +57,7 @@ export interface CardSourceResult {
   /** optional join rows shipped with a local file */
   join?: CardJoinRow[];
   note?: string;
+  diagnostics?: { failed: number; warnings: string[] };
 }
 
 /** A price observation for one (card, finish). card_id is already resolved to our id. */

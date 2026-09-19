@@ -166,10 +166,16 @@ Schema migrations snapshot the database before they run, so an upgrade that goes
 
 ## Sync jobs
 
-Jobs run automatically inside the server (fx/prices/images/meta daily, cards weekly, backup daily) and can be run by hand:
+Jobs run automatically inside the server (cards/fx/prices/images/meta/backup daily) and can be run by hand.
+The card catalog combines Riot's gallery with DotGG, including Rune reprints, alternate art, and promos.
+Overdue or empty catalogs catch up on startup; failed or partial card syncs retry after one hour.
+New printings appear live with zero owned copies, and missing images download after catalog changes.
+Feed outages never remove existing listings or alter your inventory quantities.
+
+Manual commands:
 
 ```bash
-npm run sync:cards     # Riot card gallery → cards/sets (+ TCGplayer ids via DotGG)
+npm run sync:cards     # Riot + DotGG → all card printings/sets, finishes and TCGplayer ids
 npm run sync:products  # seed/products.json → products + fixed contents
 npm run sync:images    # mirror images (--limit N)
 npm run sync:fx        # USD→MYR

@@ -14,6 +14,7 @@ import type {
   InventoryResponse,
 } from '../../shared/types.ts';
 import { findByOpId, getChange, insertChange, isUndone } from './changes.ts';
+import { normalizeCommunityId } from '../../shared/ids.ts';
 
 interface InvRow {
   qty: number;
@@ -41,10 +42,7 @@ export function validateOpId(op_id: unknown): string {
 
 /** Case-normalise a card id the way the catalog stores it: 'ogn-036A' → 'OGN-036a' (set/prefix upper, variant suffix lower). */
 export function normalizeCardId(raw: string): string {
-  return raw
-    .trim()
-    .toUpperCase()
-    .replace(/(\d)([A-Z])$/, (_m, d: string, suf: string) => d + suf.toLowerCase());
+  return normalizeCommunityId(raw) ?? raw.trim().toUpperCase();
 }
 
 function validateItems(mode: InventoryMode, items: unknown): InventoryItem[] {

@@ -7,7 +7,7 @@ import type { JobCtx } from '../types.ts';
 import type { CardJoinRow, CardSourceResult, SourceCard, SourceSet } from './types.ts';
 import { readJsonFile } from '../lib/files.ts';
 import { KNOWN_RELEASE_DATES, mapRiotItem, mapRiotSets, htmlToText, type RiotCardItem } from './cards.riot.ts';
-import { fromRiotId, normalizeCommunityId } from '../../shared/ids.ts';
+import { communityCardParts, fromRiotId, normalizeCommunityId } from '../../shared/ids.ts';
 
 interface LocalFile {
   sets?: unknown[];
@@ -38,13 +38,13 @@ function arr(v: unknown): string[] {
 export function coerceSourceCard(raw: Record<string, unknown>): SourceCard | null {
   const idRaw = str(raw.id) ?? (typeof raw.riot_id === 'string' ? fromRiotId(raw.riot_id)?.id ?? null : null);
   if (!idRaw || !raw.name) return null;
-  const id = normalizeCommunityId(idRaw) ?? idRaw.toUpperCase();
-  const m = id.match(/^([A-Z0-9]+)-(T|R|SP)?(\d+)([a-z]?)$/);
-  if (!m) return null;
-  const set_code = str(raw.set_code) ?? m[1];
-  const number = str(raw.number) ?? id.slice(set_code.length + 1);
-  const number_int = num(raw.number_int) ?? Number(m[3]);
-  const suffix = str(raw.suffix) ?? (m[4] ?? '');
+  const parts = communityCardParts(idRaw);
+  if (!parts) return null;
+  const { id } = parts;
+  const set_code = str(raw.set_code) ?? parts.set;
+  const number = str(raw.number) ?? parts.number;
+  const number_int = num(raw.number_int) ?? parts.number_int;
+  const suffix = str(raw.suffix) ?? parts.suffix;
   const rules_html = str(raw.rules_html);
   return {
     id,
@@ -55,6 +55,8 @@ export function coerceSourceCard(raw: Record<string, unknown>): SourceCard | nul
     riot_id: str(raw.riot_id),
     public_code: str(raw.public_code),
     name: String(raw.name),
+    canonical_name: str(raw.canonical_name) ?? undefined,
+    printing_kind: str(raw.printing_kind),
     type: str(raw.type),
     supertype: str(raw.supertype),
     domains: arr(raw.domains).map((d) => d.toLowerCase()),

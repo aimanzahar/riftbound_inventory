@@ -14,6 +14,7 @@ export class Scheduler {
   private queue: { name: JobName; trigger: 'schedule' | 'manual' | 'startup'; force: boolean }[] = [];
   private working = false;
   private timer: NodeJS.Timeout | null = null;
+  private startupTimer: NodeJS.Timeout | null = null;
   private db: Db;
   private cfg: Config;
   private sse: Sse;
@@ -29,12 +30,13 @@ export class Scheduler {
       log.info('disabled (NO_SCHEDULER)');
       return;
     }
-    setTimeout(() => this.tick('startup'), 15_000);
+    this.startupTimer = setTimeout(() => this.tick('startup'), 15_000);
     this.timer = setInterval(() => this.tick('schedule'), 60_000);
     log.info('started (tick every 60 s, first at +15 s)');
   }
   stop(): void {
     if (this.timer) clearInterval(this.timer);
+    if (this.startupTimer) clearTimeout(this.startupTimer);
   }
 
   isQueued(name: JobName): boolean {
@@ -54,9 +56,11 @@ export class Scheduler {
       if (JOB_INTERVAL_HOURS[name] === null) continue;
       if (this.isQueued(name)) continue;
       if (name === 'images' && !this.imagesMissing()) continue;
-      if (name === 'cards' && trigger === 'startup') continue; // cards only via its weekly window, not every boot
       const due = nextDueAt(this.db, name);
-      if (due && Date.parse(due) <= now + jitter()) {
+      const emptyCatalog = name === 'cards' && !one(this.db, 'SELECT 1 FROM cards WHERE active=1 LIMIT 1');
+      // An empty catalog catches up immediately, but failed attempts still observe retry backoff.
+      const last = emptyCatalog ? one<{ status: string }>(this.db, "SELECT status FROM job_runs WHERE job='cards' ORDER BY id DESC LIMIT 1") : null;
+      if ((due && Date.parse(due) <= now) || (emptyCatalog && last?.status === 'ok')) {
         this.queue.push({ name, trigger, force: false });
       }
     }
@@ -77,7 +81,7 @@ export class Scheduler {
       while (this.queue.length) {
         const item = this.queue.shift()!;
         try {
-          await runJob(item.name, {
+          const completed = await runJob(item.name, {
             db: this.db,
             cfg: this.cfg,
             trigger: item.trigger,
@@ -85,6 +89,9 @@ export class Scheduler {
             afterCommit: () => this.sse.drain(),
             onProgress: (ev) => this.sse.emitJob(ev),
           });
+          if (item.name === 'cards' && completed.result?.changed && !this.isQueued('images')) {
+            this.queue.unshift({ name: 'images', trigger: item.trigger, force: false });
+          }
         } catch (e) {
           if (e instanceof JobBusyError) log.warn(e.message);
           else log.error(`unexpected failure in ${item.name}`, (e as Error).stack);
@@ -94,8 +101,4 @@ export class Scheduler {
       this.working = false;
     }
   }
-}
-
-function jitter(): number {
-  return Math.floor(Math.random() * 5 * 60 * 1000);
 }

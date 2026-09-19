@@ -27,6 +27,8 @@ export function scoreCard(queryNorm: string, card: SearchCard, owned = false): n
   if (!queryNorm) return 1;
   const norm = card._norm ?? (card._norm = normalize(card.name));
   let best = 0;
+  // Rune prefixes and promo qualifiers do not fit the numeric shorthand grammar.
+  if (queryNorm === normalize(card.id)) best = 1100;
 
   // number fast path: '12', '012', 'ogn 12', 'ogn-012', '12a'
   const m = queryNorm.match(NUM_RE);

@@ -119,7 +119,7 @@ export function nextDueAt(db: Db, name: JobName): string | null {
   const last = lastRun(db, name);
   if (!last) return nowIso();
   const base = Date.parse(last.finished_at ?? last.started_at);
-  if (last.status === 'error') return new Date(base + 60 * 60 * 1000).toISOString();
+  if (last.status === 'error' || (name === 'cards' && last.status === 'partial')) return new Date(base + 60 * 60 * 1000).toISOString();
   const good = lastGoodRun(db, name);
   if (!good) return nowIso();
   return new Date(Date.parse(good.finished_at ?? good.started_at) + interval * 3600 * 1000).toISOString();

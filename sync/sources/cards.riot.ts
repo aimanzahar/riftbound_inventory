@@ -214,14 +214,20 @@ export async function fetchRiotCatalog(ctx: Pick<JobCtx, 'log' | 'signal' | 'pro
   const cards: SourceCard[] = [];
   let unparsed = 0;
   for (const it of items) {
-    const c = mapRiotItem(it);
-    if (c) cards.push(c);
-    else unparsed++;
+    try {
+      const c = mapRiotItem(it);
+      if (c) cards.push(c);
+      else unparsed++;
+    } catch { unparsed++; }
   }
   const perSet = new Map<string, number>();
   for (const c of cards) perSet.set(c.set_code, (perSet.get(c.set_code) ?? 0) + 1);
   const sets = mapRiotSets(setItems, perSet);
   const note = `riot: ${cards.length} cards (feed says ${totalItems ?? '?'}), ${sets.length} sets${unparsed ? `, ${unparsed} unparsed ids` : ''}`;
   ctx.log.info(note);
-  return { source: 'riot', sets, cards, note };
+  const warnings: string[] = [];
+  if (unparsed) warnings.push(`riot: skipped ${unparsed} invalid card rows`);
+  // Riot currently reports more items than it serves; keep this visible without rejecting valid cards.
+  if (totalItems !== null && items.length !== totalItems) warnings.push(`riot: received ${items.length} unique items; metadata reports ${totalItems}`);
+  return { source: 'riot', sets, cards, note, diagnostics: { failed: unparsed, warnings } };
 }

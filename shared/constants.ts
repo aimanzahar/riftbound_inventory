@@ -40,7 +40,7 @@ export const JOB_NAMES = ['cards', 'products', 'images', 'fx', 'prices', 'meta',
 export type JobName = (typeof JOB_NAMES)[number];
 /** null = never auto-scheduled (manual only). */
 export const JOB_INTERVAL_HOURS: Record<JobName, number | null> = {
-  cards: 168,
+  cards: 24,
   products: null,
   images: 24,
   fx: 24,
