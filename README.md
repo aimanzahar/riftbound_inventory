@@ -166,11 +166,15 @@ Schema migrations snapshot the database before they run, so an upgrade that goes
 
 ## Sync jobs
 
-Jobs run automatically inside the server (cards/fx/prices/images/meta/backup daily) and can be run by hand.
+Jobs run automatically inside the server (cards every six hours; fx/prices/images/meta/backup daily) and can be run by hand.
 The card catalog combines Riot's gallery with DotGG, including Rune reprints, alternate art, and promos.
-Overdue or empty catalogs catch up on startup; failed or partial card syncs retry after one hour.
-New printings appear live with zero owned copies, and missing images download after catalog changes.
+Overdue or empty catalogs catch up on startup; failed or partial card and price syncs retry after one hour.
+New printings appear live with zero owned copies, and prices refresh before missing images download after catalog changes.
 Feed outages never remove existing listings or alter your inventory quantities.
+Pricing scans every marketplace group, including promos and newly listed sets. Verified printing mappings
+override incorrect community IDs; ambiguous matches remain unresolved. Corrections archive affected prices
+and history in `price_corrections` before resetting them. Missing prices remain unavailable rather than borrowing
+another printing's price.
 
 Manual commands:
 

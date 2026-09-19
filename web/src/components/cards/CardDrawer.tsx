@@ -320,10 +320,17 @@ function PricePanel({ card }: { card: Card }) {
     return () => {
       alive = false;
     };
-  }, [card.id]);
+  }, [card.id, normal?.fetched_at, foilP?.fetched_at]);
 
   const p = normal ?? foilP;
-  if (!p) return <p className="text-sm text-faint">No price yet. Prices come from TCGplayer (via tcgcsv) once the “prices” job has run.</p>;
+  if (!p) return (
+    <div className="flex flex-col gap-2 text-sm text-faint">
+      <p>No price available for this printing yet. Prices update automatically.</p>
+      <a href={tcgplayerUrl(card)} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+        {card.tcgplayer_id ? 'View listing on TCGplayer' : 'Search this printing on TCGplayer'} ↗
+      </a>
+    </div>
+  );
   const usd = p.usd_market ?? p.usd_mid;
   const myr = usdToMyr(usd, fx?.rate ?? null);
   const series = (history ?? []).filter((h) => h.finish === p.finish).map((h) => ({ day: h.day, value: h.usd_market }));

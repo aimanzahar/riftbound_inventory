@@ -1,5 +1,6 @@
 // Job: cards — Riot + DotGG (or a local JSON) → all sets and printings, finishes and market IDs,
 // variant_of / variant_kind computation, single-transaction upsert, catalog change row.
+import { marketOverride, rejectedMarket } from './market.ts';
 import type { JobCtx, JobResult } from './types.ts';
 import type { CardJoinRow, CardSourceResult, SourceCard, SourceSet } from './sources/types.ts';
 import { fetchCombinedCatalog } from './sources/cards.catalog.ts';
@@ -265,6 +266,9 @@ export async function run(ctx: JobCtx): Promise<JobResult> {
         banned: j && j.banned !== null ? (j.banned ? 1 : 0) : prev ? Number(prev.banned) : 0,
         active: 1,
       };
+      const validatedMarket = marketOverride(db, c.id);
+      if (validatedMarket !== undefined) next.tcgplayer_id = validatedMarket;
+      else if (typeof next.tcgplayer_id === 'number' && rejectedMarket(db, c.id, next.tcgplayer_id)) next.tcgplayer_id = null;
       // A DotGG-only refresh cannot replace previously fetched Riot details.
       if (!c.riot_id && prev?.riot_id) {
         for (const col of ['riot_id', 'public_code', 'name', 'type', 'supertype', 'domains', 'energy', 'might', 'power', 'rarity', 'rules_text', 'rules_html', 'artist', 'tags', 'orientation', 'image_url'] as const) next[col] = prev[col];

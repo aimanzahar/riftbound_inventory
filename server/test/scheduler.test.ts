@@ -35,18 +35,18 @@ function setup(t: TestContext, age = 0, empty = false) {
   return { scheduler, db, cfg, calls };
 }
 
-test('overdue startup sync runs cards before newly queued images; fresh catalogs wait 24 hours', async (t) => {
+test('overdue startup sync runs cards before newly queued images; fresh catalogs wait six hours', async (t) => {
   const { scheduler, calls, db } = setup(t, 25 * hour);
   scheduler.start();
   t.mock.timers.tick(15_000);
   await turn();
-  assert.deepEqual(calls, ['cards', 'images']);
+  assert.deepEqual(calls, ['cards', 'prices', 'images']);
   assert.equal(all(db, "SELECT * FROM job_runs WHERE job='cards' AND trigger='startup'").length, 1);
   calls.length = 0;
   t.mock.timers.tick(60_000);
   await turn();
   assert.deepEqual(calls, []);
-  assert.equal(nextDueAt(db, 'cards'), new Date(now.getTime() + 15_000 + 24 * hour).toISOString());
+  assert.equal(nextDueAt(db, 'cards'), new Date(now.getTime() + 15_000 + 6 * hour).toISOString());
 });
 
 test('empty catalog catches up on startup even after a recent successful run', async (t) => {
@@ -54,7 +54,7 @@ test('empty catalog catches up on startup even after a recent successful run', a
   scheduler.start();
   t.mock.timers.tick(15_000);
   await turn();
-  assert.deepEqual(calls, ['cards', 'images']);
+  assert.deepEqual(calls, ['cards', 'prices', 'images']);
 });
 
 test('fresh nonempty catalogs do not run at startup and NO_SCHEDULER disables automation', async (t) => {
@@ -83,7 +83,7 @@ test('partial and failed card refreshes retry after one hour, including empty ca
   assert.deepEqual(calls, []);
   t.mock.timers.tick(hour);
   await turn();
-  assert.deepEqual(calls, ['cards', 'images']);
+  assert.deepEqual(calls, ['cards', 'prices', 'images']);
 });
 
 test('manual and scheduled requests cannot duplicate running cards or queued images', async (t) => {
@@ -103,7 +103,7 @@ test('manual and scheduled requests cannot duplicate running cards or queued ima
   t.mock.timers.tick(60_000);
   release();
   await turn();
-  assert.deepEqual(calls, ['cards', 'images']);
+  assert.deepEqual(calls, ['cards', 'prices', 'images']);
 });
 
 test('stopping the scheduler cancels its pending startup timer', async (t) => {
@@ -113,4 +113,21 @@ test('stopping the scheduler cancels its pending startup timer', async (t) => {
   t.mock.timers.tick(60_000);
   await turn();
   assert.deepEqual(calls, []);
+});
+
+
+test('partial prices retry after an hour and catalog follow-ups promote queued prices ahead of images', async (t) => {
+  const { scheduler, calls, db } = setup(t, 7 * hour);
+  run(db, "UPDATE job_runs SET status='partial' WHERE job='prices'");
+  assert.equal(nextDueAt(db, 'prices'), new Date(now.getTime() + hour).toISOString());
+  let release!: () => void;
+  const blocked = new Promise<void>((resolve) => { release = resolve; });
+  t.mock.method(JOBS, 'cards', async () => {
+    calls.push('cards'); await blocked; return { ok: 1, failed: 0, changed: true };
+  });
+  scheduler.runNow('cards');
+  scheduler.runNow('images');
+  scheduler.runNow('prices');
+  release(); await turn();
+  assert.deepEqual(calls, ['cards', 'prices', 'images']);
 });

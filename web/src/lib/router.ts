@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from 'react';
+import { normalizeCommunityId } from '../../../shared/ids.ts';
 
 export type Page = 'collection' | 'products' | 'meta' | 'decks' | 'pack' | 'activity' | 'settings';
 
@@ -35,9 +36,9 @@ export function parseHash(hash: string): Route {
   const first = segs[0] ?? '';
   const page = PAGE_BY_SEGMENT[first] ?? 'collection';
   let cardId: string | null = null;
-  if (first === 'card' && segs[1]) cardId = safeDecode(segs[1]).toUpperCase();
+  if (first === 'card' && segs[1]) cardId = normalizeCommunityId(safeDecode(segs[1])) ?? safeDecode(segs[1]);
   const qc = query.get('card');
-  if (!cardId && qc) cardId = qc.toUpperCase();
+  if (!cardId && qc) cardId = normalizeCommunityId(qc) ?? qc;
   query.delete('card');
   return { page, cardId, query, hash };
 }

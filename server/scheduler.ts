@@ -89,8 +89,14 @@ export class Scheduler {
             afterCommit: () => this.sse.drain(),
             onProgress: (ev) => this.sse.emitJob(ev),
           });
-          if (item.name === 'cards' && completed.result?.changed && !this.isQueued('images')) {
-            this.queue.unshift({ name: 'images', trigger: item.trigger, force: false });
+          if (item.name === 'cards' && completed.result?.changed) {
+            // Promote existing follow-ups as well: pricing must not wait behind image downloads.
+            for (const name of ['images', 'prices'] as const) {
+              if (isRunning(name)) continue;
+              const queued = this.queue.find((q) => q.name === name);
+              this.queue = this.queue.filter((q) => q.name !== name);
+              this.queue.unshift(queued ?? { name, trigger: item.trigger, force: false });
+            }
           }
         } catch (e) {
           if (e instanceof JobBusyError) log.warn(e.message);

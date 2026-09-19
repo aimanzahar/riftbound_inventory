@@ -184,7 +184,7 @@ test('market IDs separate promo prices from regular cards with the same printed 
   t.mock.method(globalThis, 'fetch', async (input: Parameters<typeof fetch>[0]) => {
     const url = String(input);
     if (url.endsWith('/groups')) return Response.json({ results: [{ groupId: 1, abbreviation: 'OGN', name: 'Origins' }] });
-    if (url.endsWith('/products')) return Response.json({ results: [regular, promo].map((productId) => ({ productId, name: 'Ahri', extendedData: [{ name: 'Number', value: '066/298' }] })) });
+    if (url.endsWith('/products')) return Response.json({ results: [regular, promo].map((productId) => ({ productId, name: productId === promo ? 'Ahri (Nexus Night Promo)' : 'Ahri', extendedData: [{ name: 'Number', value: '066/298' }] })) });
     if (url.endsWith('/prices')) return Response.json({ results: [regular, promo].map((productId, i) => ({ productId, subTypeName: 'Foil', marketPrice: i ? 100 : 1 })) });
     throw new Error(url);
   });

@@ -76,7 +76,7 @@ describe('migrations', { timeout: 60_000 }, () => {
 
     const res = migrate(db, MIGRATIONS_DIR);
     assert.ok(res.applied.includes('003_user_decks.sql'), `applied: ${res.applied.join(', ')}`);
-    assert.equal(userVersion(db), 3);
+    assert.equal(userVersion(db), 4);
 
     const after = all<typeof before extends (infer T)[] ? T : never>(db, 'SELECT seq, kind, reason, entity, undo_of, op_id, payload FROM changes ORDER BY seq');
     assert.deepEqual(after, before, 'every column of every row survives byte for byte');

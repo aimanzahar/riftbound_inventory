@@ -49,6 +49,7 @@ export async function run(ctx: JobCtx): Promise<JobResult> {
   const cardsPriced = new Set<string>();
   let count = 0;
   let failed = 0;
+  let mappingChanged = false;
   let sourceLabel = '';
   const notes: string[] = [];
 
@@ -72,18 +73,22 @@ export async function run(ctx: JobCtx): Promise<JobResult> {
     let unmatchedCount = 0;
     let groupsOk = 0;
     let sealed = 0;
+    let ambiguous = 0;
     try {
       const res = await fetchTcgcsvPrices(ctx, (g) => {
-        if (g.error) return;
+        if (g.error) { notes.push(`${g.group.name}: ${g.error}`); return; }
+        ambiguous += g.ambiguous;
         const r = ingest(g.rows);
         groupsOk++;
         sealed += g.sealed;
         unmatchedCount += g.unmatched.length;
-        for (const u of g.unmatched.slice(0, 3)) if (unmatched.length < 12) unmatched.push(`${g.set.code} ${u.number} ${u.name} (#${u.productId})`);
+        for (const u of g.unmatched.slice(0, 3)) if (unmatched.length < 12) unmatched.push(`${g.set?.code ?? g.group.abbreviation ?? g.group.name} ${u.number} ${u.name} (#${u.productId})`);
         log.info(`tcgcsv ${g.group.abbreviation ?? g.group.name}: ${r.written} prices, ${g.matchedProducts} products matched, ${g.unmatched.length} unmatched, ${g.sealed} sealed`);
       });
       failed = res.failedGroups;
-      notes.push(`tcgcsv: ${count} prices for ${cardsPriced.size} cards across ${groupsOk}/${res.groups} groups, unmatched ${unmatchedCount} numbered products, ${sealed} sealed skipped${unmatched.length ? ` · e.g. ${unmatched.join('; ')}` : ''}`);
+      mappingChanged = res.changed;
+      notes.push(`resolved ${res.resolved} listings, rejected ${res.rejected} incorrect assignments`);
+      notes.push(`tcgcsv: ${count} prices for ${cardsPriced.size} cards across ${groupsOk}/${res.groups} groups, ambiguous ${ambiguous}, unmatched ${unmatchedCount} numbered products, ${sealed} sealed skipped${unmatched.length ? ` · e.g. ${unmatched.join('; ')}` : ''}`);
     } catch (e) {
       const msg = `tcgcsv failed: ${(e as Error).message}`;
       log.warn(msg);
@@ -109,10 +114,13 @@ export async function run(ctx: JobCtx): Promise<JobResult> {
     throw new Error(`unknown price source "${sourceName}" (expected tcgcsv|dotgg|localjson)`);
   }
 
+  const active = all<{ id: string }>(db, 'SELECT id FROM cards WHERE active=1');
+  notes.push(`${active.length - cardsPriced.size}/${active.length} active cards without a fresh price`);
+
   if (count === 0) {
     const message = `error: no prices matched (${notes.join(' · ')})`;
     log.error(message);
-    return { ok: 0, failed: Math.max(1, failed), message, changed: false };
+    return { ok: 0, failed: Math.max(1, failed), message, changed: mappingChanged };
   }
 
   db.tx(() => {
